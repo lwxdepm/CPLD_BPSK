@@ -1,0 +1,601 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C32A44VQ | XC2C32A-6-VQ44
+
+DEVICE | 2C32A | 2C32A44VQ | 
+
+NETWORK | multi_clk_generator_no_reset | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_in_II | multi_clk_generator_no_reset_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk_in | 1359 | PI | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+
+MACROCELL_INSTANCE | PrldLow | clk_out_14k_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 1024 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 1404 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 1409 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | clk_out_14k_MC.Q | 1415 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | clk_out_14k_MC.Q | clk_out_14k_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | clk_out_14k_MC.SI | clk_out_14k_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 1404 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 1409 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clk_out_14k_MC.D1 | 1362 | ? | 0 | 0 | clk_out_14k_MC | NULL | NULL | clk_out_14k_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clk_out_14k_MC.D2 | 1361 | ? | 0 | 0 | clk_out_14k_MC | NULL | NULL | clk_out_14k_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | counter_14k<8> | IV_FALSE | counter_14k<9>
+SPPTERM | 5 | IV_FALSE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<9>
+
+SRFF_INSTANCE | clk_out_14k_MC.REG | clk_out_14k_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clk_out_14k_MC.D | 1360 | ? | 0 | 0 | clk_out_14k_MC | NULL | NULL | clk_out_14k_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clk_out_14k_MC.Q | 1414 | ? | 0 | 0 | clk_out_14k_MC | NULL | NULL | clk_out_14k_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<4>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<4>_MC.SI | counter_14k<4>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<4>_MC.D1 | 1366 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 4 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<4>_MC.D2 | 1367 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<4>_MC.REG | counter_14k<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<4>_MC.D | 1365 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<4>_MC.Q | 1364 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff | counter_14k<0>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5376 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<0>_MC.SI | counter_14k<0>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<0>_MC.D1 | 1372 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<0>_MC.D2 | 1371 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<0>_MC.REG | counter_14k<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<0>_MC.D | 1370 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<0>_MC.Q | 1369 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<1>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<1>_MC.SI | counter_14k<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<1>_MC.D1 | 1377 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | counter_14k<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<1>_MC.D2 | 1378 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<1>_MC.REG | counter_14k<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<1>_MC.D | 1376 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<1>_MC.Q | 1375 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<2>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<2>_MC.SI | counter_14k<2>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<2>_MC.D1 | 1382 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<2>_MC.D2 | 1383 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<2>_MC.REG | counter_14k<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<2>_MC.D | 1381 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<2>_MC.Q | 1380 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<3>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<3>_MC.SI | counter_14k<3>_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<3>_MC.D1 | 1387 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 3 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<3>_MC.D2 | 1388 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<3>_MC.REG | counter_14k<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<3>_MC.D | 1386 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<3>_MC.Q | 1385 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<5>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 1404 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 1409 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<5>_MC.SI | counter_14k<5>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 1404 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 1409 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<5>_MC.D1 | 1393 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<5>_MC.D2 | 1392 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5>
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<6>
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<7>
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<8>
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_FALSE | counter_14k<9>
+
+SRFF_INSTANCE | counter_14k<5>_MC.REG | counter_14k<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<5>_MC.D | 1391 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<5>_MC.Q | 1390 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<6>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<6>_MC.SI | counter_14k<6>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<6>_MC.D1 | 1397 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<6>_MC.D2 | 1398 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<6>_MC.REG | counter_14k<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<6>_MC.D | 1396 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<6>_MC.Q | 1395 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<7>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<7>_MC.SI | counter_14k<7>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<7>_MC.D1 | 1402 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 7 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<7>_MC.D2 | 1403 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<7>_MC.REG | counter_14k<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<7>_MC.D | 1401 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<7>_MC.Q | 1400 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<8>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<8> | 1404 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<8>_MC.SI | counter_14k<8>_MC | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<8>_MC.D1 | 1407 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 8 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<8>_MC.D2 | 1408 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<8>_MC.REG | counter_14k<8>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<8>_MC.D | 1406 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<8>_MC.Q | 1405 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<9>_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 1404 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 1409 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<9> | 1409 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<9>_MC.SI | counter_14k<9>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 1363 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 1368 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 1374 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 1379 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 1384 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 1389 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 1394 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 1399 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 1404 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 1409 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<9>_MC.D1 | 1413 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<9>_MC.D2 | 1412 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 9 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7> | IV_TRUE | counter_14k<8>
+SPPTERM | 10 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9>
+
+SRFF_INSTANCE | counter_14k<9>_MC.REG | counter_14k<9>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<9>_MC.D | 1411 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<9>_MC.Q | 1410 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | clk_out_14k | multi_clk_generator_no_reset_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | clk_out_14k_MC.Q | 1415 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | clk_out_14k_MC.Q | clk_out_14k_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | clk_out_14k | 1416 | PO | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_out_14k | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff | clk_out_3_84M_MC | multi_clk_generator_no_reset_COPY_0_COPY_0 | 5376 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | clk_out_3_84M_MC.Q | 1421 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | clk_out_3_84M_MC.Q | clk_out_3_84M_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | clk_out_3_84M_MC.SI | clk_out_3_84M_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clk_out_3_84M_MC.D1 | 1419 | ? | 0 | 0 | clk_out_3_84M_MC | NULL | NULL | clk_out_3_84M_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clk_out_3_84M_MC.D2 | 1418 | ? | 0 | 0 | clk_out_3_84M_MC | NULL | NULL | clk_out_3_84M_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | clk_out_3_84M_MC.REG | clk_out_3_84M_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clk_out_3_84M_MC.D | 1417 | ? | 0 | 0 | clk_out_3_84M_MC | NULL | NULL | clk_out_3_84M_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 1373 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clk_out_3_84M_MC.Q | 1420 | ? | 0 | 0 | clk_out_3_84M_MC | NULL | NULL | clk_out_3_84M_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | clk_out_3_84M | multi_clk_generator_no_reset_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | clk_out_3_84M_MC.Q | 1421 | ? | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | clk_out_3_84M_MC.Q | clk_out_3_84M_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | clk_out_3_84M | 1422 | PO | 0 | 0 | multi_clk_generator_no_reset_COPY_0_COPY_0 | NULL | NULL | clk_out_3_84M | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | multi_clk_generator_no_reset_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 7 | counter_14k<0>_MC | 1 | NULL | 0 | NULL | 0 | 31 | 53248
+FBPIN | 8 | counter_14k<1>_MC | 1 | NULL | 0 | NULL | 0 | 30 | 51200
+FBPIN | 9 | counter_14k<2>_MC | 1 | NULL | 0 | NULL | 0 | 29 | 49152
+FBPIN | 10 | counter_14k<3>_MC | 1 | NULL | 0 | NULL | 0 | 28 | 49152
+FBPIN | 11 | counter_14k<4>_MC | 1 | NULL | 0 | NULL | 0 | 27 | 49152
+FBPIN | 12 | counter_14k<6>_MC | 1 | NULL | 0 | NULL | 0 | 23 | 49152
+FBPIN | 13 | counter_14k<7>_MC | 1 | NULL | 0 | NULL | 0 | 22 | 49152
+FBPIN | 14 | counter_14k<8>_MC | 1 | NULL | 0 | NULL | 0 | 21 | 49152
+FBPIN | 15 | counter_14k<9>_MC | 1 | NULL | 0 | NULL | 0 | 20 | 49152
+FBPIN | 16 | counter_14k<5>_MC | 1 | NULL | 0 | NULL | 0 | 19 | 49152
+
+FB_INSTANCE | FOOBAR2_ | multi_clk_generator_no_reset_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 7 | NULL | 0 | clk_in_II | 1 | NULL | 0 | 1 | 57344
+FBPIN | 12 | clk_out_14k_MC | 1 | NULL | 0 | clk_out_14k | 1 | 8 | 49152
+FBPIN | 13 | clk_out_3_84M_MC | 1 | NULL | 0 | clk_out_3_84M | 1 | 12 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | multi_clk_generator_no_reset_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | multi_clk_generator_no_reset_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | multi_clk_generator_no_reset_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 13
+PLA_TERM | 0 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<6>
+PLA_TERM | 1 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<7>
+PLA_TERM | 2 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<8>
+PLA_TERM | 3 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_FALSE | counter_14k<9>
+PLA_TERM | 4 | 
+SPPTERM | 9 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7> | IV_TRUE | counter_14k<8>
+PLA_TERM | 5 | 
+SPPTERM | 10 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9>
+PLA_TERM | 31 | 
+SPPTERM | 1 | IV_TRUE | counter_14k<0>
+PLA_TERM | 34 | 
+SPPTERM | 2 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1>
+PLA_TERM | 37 | 
+SPPTERM | 3 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2>
+PLA_TERM | 40 | 
+SPPTERM | 4 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3>
+PLA_TERM | 43 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5>
+PLA_TERM | 46 | 
+SPPTERM | 7 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6>
+PLA_TERM | 49 | 
+SPPTERM | 8 | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7>
+
+PLA | FOOBAR2_ | 2
+PLA_TERM | 0 | 
+SPPTERM | 5 | IV_FALSE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<9>
+PLA_TERM | 1 | 
+SPPTERM | 2 | IV_FALSE | counter_14k<8> | IV_FALSE | counter_14k<9>
+
+
+IOSTD | LVCMOS18
+clk_in | LVCMOS18
+clk_out_14k | LVCMOS18
+clk_out_3_84M | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | counter_14k<8> | NULL | 1 | counter_14k<5> | NULL | 3 | counter_14k<9> | NULL | 4 | counter_14k<6> | NULL | 5 | counter_14k<1> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 7 | counter_14k<7> | NULL | 8 | counter_14k<4> | NULL | 13 | counter_14k<3> | NULL | 16 | counter_14k<0> | NULL | 17 | counter_14k<2> | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 46 | 48 | -1 | 47 | 44 | 40 | -1 | 45 | 43 | -1 | -1 | -1 | -1 | 42 | -1 | -1 | 39 | 41 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | counter_14k<8> | NULL | 1 | counter_14k<5> | NULL | 3 | counter_14k<9> | NULL | 4 | counter_14k<6> | NULL | 7 | counter_14k<7> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 8 | counter_14k<4> | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | 46 | 48 | -1 | 47 | 44 | -1 | -1 | 45 | 43 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk_in | 2 | 2

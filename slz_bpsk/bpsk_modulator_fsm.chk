@@ -1,0 +1,45 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK0: 1=clk_in_7p68M.p
+----------------- B l o c k 0 ------------------
+PLApt(23/56), Fanin(19/38), Clk(1/3), Bct(0/4), Pin(1/16), Mcell(16/16)
+PLApts[23/56] 2 3 4 5 16 11 13 15 34 () 17 () () 8 () () 9 () () 10 () () 12 () () 14 () () () () () () () () 26 () () 27 () () 28 () () 29 () () 33 () () 32 () () 31 () () 30
+Fanins[19] bit_counter<0>.n bit_counter<1>.n bit_counter<2>.n bit_counter<3>.n bit_counter<4>.n bit_counter<5>.n bit_counter<6>.n carrier_gen.n state_reg.n symbol_rate_counter<0>.n symbol_rate_counter<1>.n symbol_rate_counter<2>.n symbol_rate_counter<3>.n symbol_rate_counter<4>.n symbol_rate_counter<5>.n symbol_rate_counter<6>.n symbol_rate_counter<7>.n symbol_rate_counter<8>.n symbol_rate_counter<9>.n
+clk[1] clk_in_7p68M 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [bpsk_out(45),bpsk_out(38)] [bit_counter<4>(60)] [bit_counter<5>(59)] [bit_counter<6>(58)]  
+           [state_reg(57)] [bit_counter<3>(56)] [bit_counter<2>(55)] [bit_counter<1>(54)]  
+           [bit_counter<0>(53)] [symbol_rate_counter<9>(52)] [symbol_rate_counter<5>(51)]  
+           [symbol_rate_counter<8>(50)] [symbol_rate_counter<7>(49)] [symbol_rate_counter<6>(48)]  
+           [symbol_rate_counter<4>(47)] [symbol_rate_counter<3>(46)] 
+Signal[16] [ 0: bpsk_out(45) bpsk_out(38)  ][ 1: symbol_rate_counter<3>(46) (37)  ][ 2:  
+           symbol_rate_counter<4>(47) (36)  ][ 3: symbol_rate_counter<6>(48) (34)  ][ 4:  
+           symbol_rate_counter<7>(49) (33)  ][ 5: symbol_rate_counter<8>(50) (32)  ][ 6:  
+           symbol_rate_counter<5>(51) (31)  ][ 7: symbol_rate_counter<9>(52) (30)  ][ 8: bit_counter<0>(53)  
+           (29)  ][ 9: bit_counter<1>(54) (28)  ][ 10: bit_counter<2>(55) (27)  ][ 11: bit_counter<3>(56)  
+           (23)  ][ 12: state_reg(57) (22)  ][ 13: bit_counter<6>(58) (21)  ][ 14: bit_counter<5>(59) (20)  ] 
+           [ 15: bit_counter<4>(60) (19)  ]
+----------------- B l o c k 1 ------------------
+PLApt(2/56), Fanin(2/38), Clk(1/3), Bct(0/4), Pin(1/16), Mcell(4/16)
+PLApts[2/50] () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 7 () () 6
+Fanins[ 2] symbol_rate_counter<0>.n symbol_rate_counter<1>.n
+clk[1] clk_in_7p68M 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 5] [clk_in_7p68M(43)] [carrier_gen(76)] [symbol_rate_counter<0>(75)] [symbol_rate_counter<1>(74)]  
+           [symbol_rate_counter<2>(73)] 
+Signal[ 5] [ 0: (39)  ][ 1: (40)  ][ 2: (41)  ][ 3: (42)  ][ 4: clk_in_7p68M(43)  ][ 5: (44)  ][ 6: (1)  ] 
+           [ 7: (2)  ][ 8: (3)  ][ 9: (5)  ][ 10: (6)  ][ 11: (8)  ][ 12: symbol_rate_counter<2>(73) (12)  ] 
+           [ 13: symbol_rate_counter<1>(74) (13)  ][ 14: symbol_rate_counter<0>(75) (14)  ][ 15:  
+           carrier_gen(76) (16)  ]

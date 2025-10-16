@@ -1,0 +1,1233 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C32A44VQ | XC2C32A-6-VQ44
+
+DEVICE | 2C32A | 2C32A44VQ | 
+
+NETWORK | bpsk_modulator_fsm | 0 | 0 | 1073758214 | 0
+
+MACROCELL_INSTANCE | PrldLow | bpsk_out_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 1024 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | state_reg | 2275 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | state_reg_MC.Q | state_reg_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_gen | 2367 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | carrier_gen_MC.Q | carrier_gen_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | bpsk_out_MC.Q | 2373 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bpsk_out_MC.Q | bpsk_out_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | bpsk_out_MC.SI | bpsk_out_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | state_reg | 2275 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | state_reg_MC.Q | state_reg_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_gen | 2367 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | carrier_gen_MC.Q | carrier_gen_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bpsk_out_MC.D1 | 2273 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | state_reg | IV_TRUE | carrier_gen
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bpsk_out_MC.D2 | 2274 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | state_reg | IV_FALSE | bit_counter<0> | IV_TRUE | bit_counter<2>
+SPPTERM | 4 | IV_TRUE | state_reg | IV_TRUE | bit_counter<0> | IV_TRUE | bit_counter<1> | IV_FALSE | bit_counter<2>
+SPPTERM | 4 | IV_TRUE | state_reg | IV_TRUE | bit_counter<0> | IV_TRUE | bit_counter<1> | IV_FALSE | bit_counter<3>
+SPPTERM | 4 | IV_TRUE | state_reg | IV_FALSE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3>
+
+SRFF_INSTANCE | bpsk_out_MC.REG | bpsk_out_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bpsk_out_MC.D | 2272 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bpsk_out_MC.Q | 2372 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | state_reg_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 18 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<4> | 2352 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<4>_MC.Q | bit_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<5> | 2357 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<5>_MC.Q | bit_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<6> | 2362 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<6>_MC.Q | bit_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | state_reg | 2275 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | state_reg_MC.Q | state_reg_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | state_reg_MC.SI | state_reg_MC | 0 | 17 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<4> | 2352 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<4>_MC.Q | bit_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<5> | 2357 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<5>_MC.Q | bit_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<6> | 2362 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<6>_MC.Q | bit_counter<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | state_reg_MC.D1 | 2278 | ? | 0 | 0 | state_reg_MC | NULL | NULL | state_reg_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 17 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3> | IV_TRUE | bit_counter<4> | IV_TRUE | bit_counter<5> | IV_TRUE | bit_counter<6>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | state_reg_MC.D2 | 2279 | ? | 0 | 0 | state_reg_MC | NULL | NULL | state_reg_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | state_reg_MC.REG | state_reg_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | state_reg_MC.D | 2277 | ? | 0 | 0 | state_reg_MC | NULL | NULL | state_reg_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | state_reg_MC.Q | 2276 | ? | 0 | 0 | state_reg_MC | NULL | NULL | state_reg_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | bit_counter<0>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | bit_counter<0>_MC.SI | bit_counter<0>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bit_counter<0>_MC.D1 | 2283 | ? | 0 | 0 | bit_counter<0>_MC | NULL | NULL | bit_counter<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 10 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bit_counter<0>_MC.D2 | 2284 | ? | 0 | 0 | bit_counter<0>_MC | NULL | NULL | bit_counter<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | bit_counter<0>_MC.REG | bit_counter<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bit_counter<0>_MC.D | 2282 | ? | 0 | 0 | bit_counter<0>_MC | NULL | NULL | bit_counter<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bit_counter<0>_MC.Q | 2281 | ? | 0 | 0 | bit_counter<0>_MC | NULL | NULL | bit_counter<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff | symbol_rate_counter<0>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5376 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<0>_MC.SI | symbol_rate_counter<0>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<0>_MC.D1 | 2289 | ? | 0 | 0 | symbol_rate_counter<0>_MC | NULL | NULL | symbol_rate_counter<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<0>_MC.D2 | 2288 | ? | 0 | 0 | symbol_rate_counter<0>_MC | NULL | NULL | symbol_rate_counter<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<0>_MC.REG | symbol_rate_counter<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<0>_MC.D | 2287 | ? | 0 | 0 | symbol_rate_counter<0>_MC | NULL | NULL | symbol_rate_counter<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<0>_MC.Q | 2286 | ? | 0 | 0 | symbol_rate_counter<0>_MC | NULL | NULL | symbol_rate_counter<0>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_in_7p68M_II | bpsk_modulator_fsm_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk_in_7p68M | 2290 | PI | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<1>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<1>_MC.SI | symbol_rate_counter<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<1>_MC.D1 | 2295 | ? | 0 | 0 | symbol_rate_counter<1>_MC | NULL | NULL | symbol_rate_counter<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | symbol_rate_counter<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<1>_MC.D2 | 2296 | ? | 0 | 0 | symbol_rate_counter<1>_MC | NULL | NULL | symbol_rate_counter<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<1>_MC.REG | symbol_rate_counter<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<1>_MC.D | 2294 | ? | 0 | 0 | symbol_rate_counter<1>_MC | NULL | NULL | symbol_rate_counter<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<1>_MC.Q | 2293 | ? | 0 | 0 | symbol_rate_counter<1>_MC | NULL | NULL | symbol_rate_counter<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<2>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<2>_MC.SI | symbol_rate_counter<2>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<2>_MC.D1 | 2300 | ? | 0 | 0 | symbol_rate_counter<2>_MC | NULL | NULL | symbol_rate_counter<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<2>_MC.D2 | 2301 | ? | 0 | 0 | symbol_rate_counter<2>_MC | NULL | NULL | symbol_rate_counter<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<2>_MC.REG | symbol_rate_counter<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<2>_MC.D | 2299 | ? | 0 | 0 | symbol_rate_counter<2>_MC | NULL | NULL | symbol_rate_counter<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<2>_MC.Q | 2298 | ? | 0 | 0 | symbol_rate_counter<2>_MC | NULL | NULL | symbol_rate_counter<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<3>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<3>_MC.SI | symbol_rate_counter<3>_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<3>_MC.D1 | 2305 | ? | 0 | 0 | symbol_rate_counter<3>_MC | NULL | NULL | symbol_rate_counter<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 3 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<3>_MC.D2 | 2306 | ? | 0 | 0 | symbol_rate_counter<3>_MC | NULL | NULL | symbol_rate_counter<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<3>_MC.REG | symbol_rate_counter<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<3>_MC.D | 2304 | ? | 0 | 0 | symbol_rate_counter<3>_MC | NULL | NULL | symbol_rate_counter<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<3>_MC.Q | 2303 | ? | 0 | 0 | symbol_rate_counter<3>_MC | NULL | NULL | symbol_rate_counter<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<4>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<4>_MC.SI | symbol_rate_counter<4>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<4>_MC.D1 | 2310 | ? | 0 | 0 | symbol_rate_counter<4>_MC | NULL | NULL | symbol_rate_counter<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 4 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<4>_MC.D2 | 2311 | ? | 0 | 0 | symbol_rate_counter<4>_MC | NULL | NULL | symbol_rate_counter<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<4>_MC.REG | symbol_rate_counter<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<4>_MC.D | 2309 | ? | 0 | 0 | symbol_rate_counter<4>_MC | NULL | NULL | symbol_rate_counter<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<4>_MC.Q | 2308 | ? | 0 | 0 | symbol_rate_counter<4>_MC | NULL | NULL | symbol_rate_counter<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<5>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<5>_MC.SI | symbol_rate_counter<5>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<5>_MC.D1 | 2316 | ? | 0 | 0 | symbol_rate_counter<5>_MC | NULL | NULL | symbol_rate_counter<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<5>_MC.D2 | 2315 | ? | 0 | 0 | symbol_rate_counter<5>_MC | NULL | NULL | symbol_rate_counter<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5>
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<6>
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<7>
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<8>
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<9>
+
+SRFF_INSTANCE | symbol_rate_counter<5>_MC.REG | symbol_rate_counter<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<5>_MC.D | 2314 | ? | 0 | 0 | symbol_rate_counter<5>_MC | NULL | NULL | symbol_rate_counter<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<5>_MC.Q | 2313 | ? | 0 | 0 | symbol_rate_counter<5>_MC | NULL | NULL | symbol_rate_counter<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<6>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<6>_MC.SI | symbol_rate_counter<6>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<6>_MC.D1 | 2320 | ? | 0 | 0 | symbol_rate_counter<6>_MC | NULL | NULL | symbol_rate_counter<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<6>_MC.D2 | 2321 | ? | 0 | 0 | symbol_rate_counter<6>_MC | NULL | NULL | symbol_rate_counter<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<6>_MC.REG | symbol_rate_counter<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<6>_MC.D | 2319 | ? | 0 | 0 | symbol_rate_counter<6>_MC | NULL | NULL | symbol_rate_counter<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<6>_MC.Q | 2318 | ? | 0 | 0 | symbol_rate_counter<6>_MC | NULL | NULL | symbol_rate_counter<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<7>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<7>_MC.SI | symbol_rate_counter<7>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<7>_MC.D1 | 2325 | ? | 0 | 0 | symbol_rate_counter<7>_MC | NULL | NULL | symbol_rate_counter<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 7 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5> | IV_TRUE | symbol_rate_counter<6>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<7>_MC.D2 | 2326 | ? | 0 | 0 | symbol_rate_counter<7>_MC | NULL | NULL | symbol_rate_counter<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<7>_MC.REG | symbol_rate_counter<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<7>_MC.D | 2324 | ? | 0 | 0 | symbol_rate_counter<7>_MC | NULL | NULL | symbol_rate_counter<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<7>_MC.Q | 2323 | ? | 0 | 0 | symbol_rate_counter<7>_MC | NULL | NULL | symbol_rate_counter<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<8>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<8>_MC.SI | symbol_rate_counter<8>_MC | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<8>_MC.D1 | 2330 | ? | 0 | 0 | symbol_rate_counter<8>_MC | NULL | NULL | symbol_rate_counter<8>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 8 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5> | IV_TRUE | symbol_rate_counter<6> | IV_TRUE | symbol_rate_counter<7>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<8>_MC.D2 | 2331 | ? | 0 | 0 | symbol_rate_counter<8>_MC | NULL | NULL | symbol_rate_counter<8>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | symbol_rate_counter<8>_MC.REG | symbol_rate_counter<8>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<8>_MC.D | 2329 | ? | 0 | 0 | symbol_rate_counter<8>_MC | NULL | NULL | symbol_rate_counter<8>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<8>_MC.Q | 2328 | ? | 0 | 0 | symbol_rate_counter<8>_MC | NULL | NULL | symbol_rate_counter<8>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | symbol_rate_counter<9>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | symbol_rate_counter<9>_MC.SI | symbol_rate_counter<9>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | symbol_rate_counter<9>_MC.D1 | 2336 | ? | 0 | 0 | symbol_rate_counter<9>_MC | NULL | NULL | symbol_rate_counter<9>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | symbol_rate_counter<9>_MC.D2 | 2335 | ? | 0 | 0 | symbol_rate_counter<9>_MC | NULL | NULL | symbol_rate_counter<9>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 9 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5> | IV_TRUE | symbol_rate_counter<6> | IV_TRUE | symbol_rate_counter<7> | IV_TRUE | symbol_rate_counter<8>
+SPPTERM | 10 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9>
+
+SRFF_INSTANCE | symbol_rate_counter<9>_MC.REG | symbol_rate_counter<9>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | symbol_rate_counter<9>_MC.D | 2334 | ? | 0 | 0 | symbol_rate_counter<9>_MC | NULL | NULL | symbol_rate_counter<9>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | symbol_rate_counter<9>_MC.Q | 2333 | ? | 0 | 0 | symbol_rate_counter<9>_MC | NULL | NULL | symbol_rate_counter<9>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | bit_counter<1>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 12 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | bit_counter<1>_MC.SI | bit_counter<1>_MC | 0 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bit_counter<1>_MC.D1 | 2340 | ? | 0 | 0 | bit_counter<1>_MC | NULL | NULL | bit_counter<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 11 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bit_counter<1>_MC.D2 | 2341 | ? | 0 | 0 | bit_counter<1>_MC | NULL | NULL | bit_counter<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | bit_counter<1>_MC.REG | bit_counter<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bit_counter<1>_MC.D | 2339 | ? | 0 | 0 | bit_counter<1>_MC | NULL | NULL | bit_counter<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bit_counter<1>_MC.Q | 2338 | ? | 0 | 0 | bit_counter<1>_MC | NULL | NULL | bit_counter<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | bit_counter<2>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | bit_counter<2>_MC.SI | bit_counter<2>_MC | 0 | 12 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bit_counter<2>_MC.D1 | 2345 | ? | 0 | 0 | bit_counter<2>_MC | NULL | NULL | bit_counter<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 12 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bit_counter<2>_MC.D2 | 2346 | ? | 0 | 0 | bit_counter<2>_MC | NULL | NULL | bit_counter<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | bit_counter<2>_MC.REG | bit_counter<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bit_counter<2>_MC.D | 2344 | ? | 0 | 0 | bit_counter<2>_MC | NULL | NULL | bit_counter<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bit_counter<2>_MC.Q | 2343 | ? | 0 | 0 | bit_counter<2>_MC | NULL | NULL | bit_counter<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | bit_counter<3>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 14 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | bit_counter<3>_MC.SI | bit_counter<3>_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bit_counter<3>_MC.D1 | 2350 | ? | 0 | 0 | bit_counter<3>_MC | NULL | NULL | bit_counter<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 13 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bit_counter<3>_MC.D2 | 2351 | ? | 0 | 0 | bit_counter<3>_MC | NULL | NULL | bit_counter<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | bit_counter<3>_MC.REG | bit_counter<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bit_counter<3>_MC.D | 2349 | ? | 0 | 0 | bit_counter<3>_MC | NULL | NULL | bit_counter<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bit_counter<3>_MC.Q | 2348 | ? | 0 | 0 | bit_counter<3>_MC | NULL | NULL | bit_counter<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | bit_counter<4>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | bit_counter<4> | 2352 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<4>_MC.Q | bit_counter<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | bit_counter<4>_MC.SI | bit_counter<4>_MC | 0 | 14 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bit_counter<4>_MC.D1 | 2355 | ? | 0 | 0 | bit_counter<4>_MC | NULL | NULL | bit_counter<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 14 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bit_counter<4>_MC.D2 | 2356 | ? | 0 | 0 | bit_counter<4>_MC | NULL | NULL | bit_counter<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | bit_counter<4>_MC.REG | bit_counter<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bit_counter<4>_MC.D | 2354 | ? | 0 | 0 | bit_counter<4>_MC | NULL | NULL | bit_counter<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bit_counter<4>_MC.Q | 2353 | ? | 0 | 0 | bit_counter<4>_MC | NULL | NULL | bit_counter<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | bit_counter<5>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 16 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<4> | 2352 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<4>_MC.Q | bit_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | bit_counter<5> | 2357 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<5>_MC.Q | bit_counter<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | bit_counter<5>_MC.SI | bit_counter<5>_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<4> | 2352 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<4>_MC.Q | bit_counter<4>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bit_counter<5>_MC.D1 | 2360 | ? | 0 | 0 | bit_counter<5>_MC | NULL | NULL | bit_counter<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 15 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3> | IV_TRUE | bit_counter<4>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bit_counter<5>_MC.D2 | 2361 | ? | 0 | 0 | bit_counter<5>_MC | NULL | NULL | bit_counter<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | bit_counter<5>_MC.REG | bit_counter<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bit_counter<5>_MC.D | 2359 | ? | 0 | 0 | bit_counter<5>_MC | NULL | NULL | bit_counter<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bit_counter<5>_MC.Q | 2358 | ? | 0 | 0 | bit_counter<5>_MC | NULL | NULL | bit_counter<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | bit_counter<6>_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5120 | 17 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<4> | 2352 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<4>_MC.Q | bit_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<5> | 2357 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<5>_MC.Q | bit_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | bit_counter<6> | 2362 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<6>_MC.Q | bit_counter<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | bit_counter<6>_MC.SI | bit_counter<6>_MC | 0 | 16 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<0> | 2280 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<0>_MC.Q | bit_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<0> | 2285 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<0>_MC.Q | symbol_rate_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<1> | 2292 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<1>_MC.Q | symbol_rate_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<2> | 2297 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<2>_MC.Q | symbol_rate_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<3> | 2302 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<3>_MC.Q | symbol_rate_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<4> | 2307 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<4>_MC.Q | symbol_rate_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<5> | 2312 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<5>_MC.Q | symbol_rate_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<6> | 2317 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<6>_MC.Q | symbol_rate_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<7> | 2322 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<7>_MC.Q | symbol_rate_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<8> | 2327 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<8>_MC.Q | symbol_rate_counter<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | symbol_rate_counter<9> | 2332 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | symbol_rate_counter<9>_MC.Q | symbol_rate_counter<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<1> | 2337 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<1>_MC.Q | bit_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<2> | 2342 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<2>_MC.Q | bit_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<3> | 2347 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<3>_MC.Q | bit_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<4> | 2352 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<4>_MC.Q | bit_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bit_counter<5> | 2357 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bit_counter<5>_MC.Q | bit_counter<5>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bit_counter<6>_MC.D1 | 2365 | ? | 0 | 0 | bit_counter<6>_MC | NULL | NULL | bit_counter<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 16 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3> | IV_TRUE | bit_counter<4> | IV_TRUE | bit_counter<5>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bit_counter<6>_MC.D2 | 2366 | ? | 0 | 0 | bit_counter<6>_MC | NULL | NULL | bit_counter<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | bit_counter<6>_MC.REG | bit_counter<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bit_counter<6>_MC.D | 2364 | ? | 0 | 0 | bit_counter<6>_MC | NULL | NULL | bit_counter<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bit_counter<6>_MC.Q | 2363 | ? | 0 | 0 | bit_counter<6>_MC | NULL | NULL | bit_counter<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff | carrier_gen_MC | bpsk_modulator_fsm_COPY_0_COPY_0 | 5376 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | carrier_gen | 2367 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | carrier_gen_MC.Q | carrier_gen_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | carrier_gen_MC.SI | carrier_gen_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | carrier_gen_MC.D1 | 2371 | ? | 0 | 0 | carrier_gen_MC | NULL | NULL | carrier_gen_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | carrier_gen_MC.D2 | 2370 | ? | 0 | 0 | carrier_gen_MC | NULL | NULL | carrier_gen_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | carrier_gen_MC.REG | carrier_gen_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | carrier_gen_MC.D | 2369 | ? | 0 | 0 | carrier_gen_MC | NULL | NULL | carrier_gen_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_7p68M_II/FCLK | 2291 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | clk_in_7p68M_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | carrier_gen_MC.Q | 2368 | ? | 0 | 0 | carrier_gen_MC | NULL | NULL | carrier_gen_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | bpsk_out | bpsk_modulator_fsm_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | bpsk_out_MC.Q | 2373 | ? | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | bpsk_out_MC.Q | bpsk_out_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | bpsk_out | 2374 | PO | 0 | 0 | bpsk_modulator_fsm_COPY_0_COPY_0 | NULL | NULL | bpsk_out | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | bpsk_modulator_fsm_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | bpsk_out_MC | 1 | NULL | 0 | bpsk_out | 1 | 38 | 49152
+FBPIN | 2 | symbol_rate_counter<3>_MC | 1 | NULL | 0 | NULL | 0 | 37 | 49152
+FBPIN | 3 | symbol_rate_counter<4>_MC | 1 | NULL | 0 | NULL | 0 | 36 | 49152
+FBPIN | 4 | symbol_rate_counter<6>_MC | 1 | NULL | 0 | NULL | 0 | 34 | 53248
+FBPIN | 5 | symbol_rate_counter<7>_MC | 1 | NULL | 0 | NULL | 0 | 33 | 53248
+FBPIN | 6 | symbol_rate_counter<8>_MC | 1 | NULL | 0 | NULL | 0 | 32 | 53248
+FBPIN | 7 | symbol_rate_counter<5>_MC | 1 | NULL | 0 | NULL | 0 | 31 | 53248
+FBPIN | 8 | symbol_rate_counter<9>_MC | 1 | NULL | 0 | NULL | 0 | 30 | 51200
+FBPIN | 9 | bit_counter<0>_MC | 1 | NULL | 0 | NULL | 0 | 29 | 49152
+FBPIN | 10 | bit_counter<1>_MC | 1 | NULL | 0 | NULL | 0 | 28 | 49152
+FBPIN | 11 | bit_counter<2>_MC | 1 | NULL | 0 | NULL | 0 | 27 | 49152
+FBPIN | 12 | bit_counter<3>_MC | 1 | NULL | 0 | NULL | 0 | 23 | 49152
+FBPIN | 13 | state_reg_MC | 1 | NULL | 0 | NULL | 0 | 22 | 49152
+FBPIN | 14 | bit_counter<6>_MC | 1 | NULL | 0 | NULL | 0 | 21 | 49152
+FBPIN | 15 | bit_counter<5>_MC | 1 | NULL | 0 | NULL | 0 | 20 | 49152
+FBPIN | 16 | bit_counter<4>_MC | 1 | NULL | 0 | NULL | 0 | 19 | 49152
+
+FB_INSTANCE | FOOBAR2_ | bpsk_modulator_fsm_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 5 | NULL | 0 | clk_in_7p68M_II | 1 | NULL | 0 | 43 | 57344
+FBPIN | 13 | symbol_rate_counter<2>_MC | 1 | NULL | 0 | NULL | 0 | 12 | 49152
+FBPIN | 14 | symbol_rate_counter<1>_MC | 1 | NULL | 0 | NULL | 0 | 13 | 49152
+FBPIN | 15 | symbol_rate_counter<0>_MC | 1 | NULL | 0 | NULL | 0 | 14 | 49152
+FBPIN | 16 | carrier_gen_MC | 1 | NULL | 0 | NULL | 0 | 16 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | bpsk_modulator_fsm_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | bpsk_modulator_fsm_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | bpsk_modulator_fsm_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 23
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | state_reg | IV_FALSE | bit_counter<0> | IV_TRUE | bit_counter<2>
+PLA_TERM | 1 | 
+SPPTERM | 4 | IV_TRUE | state_reg | IV_TRUE | bit_counter<0> | IV_TRUE | bit_counter<1> | IV_FALSE | bit_counter<2>
+PLA_TERM | 2 | 
+SPPTERM | 4 | IV_TRUE | state_reg | IV_FALSE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3>
+PLA_TERM | 3 | 
+SPPTERM | 4 | IV_TRUE | state_reg | IV_TRUE | bit_counter<0> | IV_TRUE | bit_counter<1> | IV_FALSE | bit_counter<3>
+PLA_TERM | 4 | 
+SPPTERM | 9 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5> | IV_TRUE | symbol_rate_counter<6> | IV_TRUE | symbol_rate_counter<7> | IV_TRUE | symbol_rate_counter<8>
+PLA_TERM | 5 | 
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<6>
+PLA_TERM | 6 | 
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<7>
+PLA_TERM | 7 | 
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<8>
+PLA_TERM | 8 | 
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<9>
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_TRUE | state_reg | IV_TRUE | carrier_gen
+PLA_TERM | 13 | 
+SPPTERM | 3 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2>
+PLA_TERM | 16 | 
+SPPTERM | 4 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3>
+PLA_TERM | 19 | 
+SPPTERM | 6 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5>
+PLA_TERM | 22 | 
+SPPTERM | 7 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5> | IV_TRUE | symbol_rate_counter<6>
+PLA_TERM | 25 | 
+SPPTERM | 8 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_TRUE | symbol_rate_counter<5> | IV_TRUE | symbol_rate_counter<6> | IV_TRUE | symbol_rate_counter<7>
+PLA_TERM | 34 | 
+SPPTERM | 10 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9>
+PLA_TERM | 37 | 
+SPPTERM | 11 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9>
+PLA_TERM | 40 | 
+SPPTERM | 12 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1>
+PLA_TERM | 43 | 
+SPPTERM | 13 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2>
+PLA_TERM | 46 | 
+SPPTERM | 17 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3> | IV_TRUE | bit_counter<4> | IV_TRUE | bit_counter<5> | IV_TRUE | bit_counter<6>
+PLA_TERM | 49 | 
+SPPTERM | 16 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3> | IV_TRUE | bit_counter<4> | IV_TRUE | bit_counter<5>
+PLA_TERM | 52 | 
+SPPTERM | 15 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3> | IV_TRUE | bit_counter<4>
+PLA_TERM | 55 | 
+SPPTERM | 14 | IV_TRUE | bit_counter<0> | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1> | IV_TRUE | symbol_rate_counter<2> | IV_TRUE | symbol_rate_counter<3> | IV_TRUE | symbol_rate_counter<4> | IV_FALSE | symbol_rate_counter<5> | IV_FALSE | symbol_rate_counter<6> | IV_FALSE | symbol_rate_counter<7> | IV_FALSE | symbol_rate_counter<8> | IV_TRUE | symbol_rate_counter<9> | IV_TRUE | bit_counter<1> | IV_TRUE | bit_counter<2> | IV_TRUE | bit_counter<3>
+
+PLA | FOOBAR2_ | 2
+PLA_TERM | 46 | 
+SPPTERM | 2 | IV_TRUE | symbol_rate_counter<0> | IV_TRUE | symbol_rate_counter<1>
+PLA_TERM | 49 | 
+SPPTERM | 1 | IV_TRUE | symbol_rate_counter<0>
+
+
+IOSTD | LVCMOS18
+clk_in_7p68M | LVCMOS18
+bpsk_out | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | bit_counter<6> | NULL | 1 | symbol_rate_counter<2> | NULL | 2 | symbol_rate_counter<4> | NULL | 3 | bit_counter<5> | NULL | 4 | bit_counter<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | symbol_rate_counter<9> | NULL | 6 | symbol_rate_counter<1> | NULL | 7 | carrier_gen | NULL | 8 | bit_counter<2> | NULL | 9 | symbol_rate_counter<7> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | symbol_rate_counter<0> | NULL | 13 | bit_counter<1> | NULL | 14 | symbol_rate_counter<6> | NULL | 15 | bit_counter<4> | NULL | 16 | state_reg | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 17 | bit_counter<0> | NULL | 18 | symbol_rate_counter<3> | NULL | 21 | symbol_rate_counter<8> | NULL | 23 | symbol_rate_counter<5> | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 46 | 61 | 35 | 47 | 44 | 40 | 62 | 64 | 43 | 37 | 63 | -1 | -1 | 42 | 36 | 48 | 45 | 41 | 34 | -1 | -1 | 38 | -1 | 39 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 6 | symbol_rate_counter<1> | NULL | 10 | symbol_rate_counter<0> | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | -1 | -1 | -1 | -1 | -1 | 62 | -1 | -1 | -1 | 63 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk_in_7p68M | 0 | 0

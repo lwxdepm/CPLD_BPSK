@@ -1,0 +1,255 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "psk_modulator";
+      var device = "XC2C32A";
+      signals = new Array("bpsk_out","clk_out_14k","clk_out_3_84M","counter_14k0_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k4_SPECSIG","counter_14k5_SPECSIG","counter_14k6_SPECSIG","counter_14k7_SPECSIG","counter_14k8_SPECSIG","counter_14k9_SPECSIG","cycle_counter0_SPECSIG","cycle_counter1_SPECSIG","cycle_counter2_SPECSIG","cycle_counter3_SPECSIG","cycle_counter4_SPECSIG","cycle_counter5_SPECSIG","cycle_counter6_SPECSIG","cycle_counter7_SPECSIG");
+      sigNegs = new Array("OFF","OFF","ON","ON","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF");
+      sigTypes = new Array("DFF","DFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF");
+
+      
+           iostyle["clk_in"]=new Array("KPR");
+        
+        specSig["b_SPECSIG"]=new Array("(b)");
+      
+        specSig["counter_14k2_SPECSIG"]=new Array("counter_14k<2>");
+      
+        specSig["counter_14k3_SPECSIG"]=new Array("counter_14k<3>");
+      
+        specSig["counter_14k4_SPECSIG"]=new Array("counter_14k<4>");
+      
+        specSig["counter_14k6_SPECSIG"]=new Array("counter_14k<6>");
+      
+        specSig["counter_14k7_SPECSIG"]=new Array("counter_14k<7>");
+      
+        specSig["counter_14k8_SPECSIG"]=new Array("counter_14k<8>");
+      
+        specSig["counter_14k5_SPECSIG"]=new Array("counter_14k<5>");
+      
+        specSig["counter_14k9_SPECSIG"]=new Array("counter_14k<9>");
+      
+        specSig["cycle_counter0_SPECSIG"]=new Array("cycle_counter<0>");
+      
+        specSig["cycle_counter1_SPECSIG"]=new Array("cycle_counter<1>");
+      
+        specSig["cycle_counter2_SPECSIG"]=new Array("cycle_counter<2>");
+      
+        specSig["cycle_counter3_SPECSIG"]=new Array("cycle_counter<3>");
+      
+        specSig["cycle_counter4_SPECSIG"]=new Array("cycle_counter<4>");
+      
+        specSig["cycle_counter5_SPECSIG"]=new Array("cycle_counter<5>");
+      
+        specSig["cycle_counter6_SPECSIG"]=new Array("cycle_counter<6>");
+      
+        specSig["cycle_counter7_SPECSIG"]=new Array("cycle_counter<7>");
+      
+        specSig["counter_14k1_SPECSIG"]=new Array("counter_14k<1>");
+      
+        specSig["counter_14k0_SPECSIG"]=new Array("counter_14k<0>");
+      
+            pterms["FB1_0"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k5_SPECSIG","counter_14k6_SPECSIG","counter_14k7_SPECSIG","counter_14k8_SPECSIG");
+          
+            pterms["FB1_1"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k6_SPECSIG");
+          
+            pterms["FB1_2"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k7_SPECSIG");
+          
+            pterms["FB1_3"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k8_SPECSIG");
+          
+            pterms["FB1_4"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k9_SPECSIG");
+          
+            pterms["FB1_10"]=new Array("counter_14k0_SPECSIG","counter_14k1_SPECSIG");
+          
+            pterms["FB1_13"]=new Array("counter_14k0_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG");
+          
+            pterms["FB1_16"]=new Array("counter_14k0_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG");
+          
+            pterms["FB1_19"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k5_SPECSIG");
+          
+            pterms["FB1_22"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k5_SPECSIG","counter_14k6_SPECSIG");
+          
+            pterms["FB1_25"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","counter_14k5_SPECSIG","counter_14k6_SPECSIG","counter_14k7_SPECSIG");
+          
+            pterms["FB1_34"]=new Array("counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG");
+          
+            pterms["FB1_37"]=new Array("cycle_counter0_SPECSIG","counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG");
+          
+            pterms["FB1_40"]=new Array("cycle_counter0_SPECSIG","counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG","cycle_counter1_SPECSIG");
+          
+            pterms["FB1_43"]=new Array("cycle_counter0_SPECSIG","counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG","cycle_counter1_SPECSIG","cycle_counter2_SPECSIG");
+          
+            pterms["FB1_46"]=new Array("cycle_counter0_SPECSIG","counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG","cycle_counter1_SPECSIG","cycle_counter2_SPECSIG","cycle_counter3_SPECSIG");
+          
+            pterms["FB1_49"]=new Array("cycle_counter0_SPECSIG","counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG","cycle_counter1_SPECSIG","cycle_counter2_SPECSIG","cycle_counter3_SPECSIG","cycle_counter4_SPECSIG");
+          
+            pterms["FB1_52"]=new Array("cycle_counter0_SPECSIG","counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG","cycle_counter1_SPECSIG","cycle_counter2_SPECSIG","cycle_counter3_SPECSIG","cycle_counter4_SPECSIG","cycle_counter5_SPECSIG");
+          
+            pterms["FB1_55"]=new Array("cycle_counter0_SPECSIG","counter_14k0_SPECSIG","counter_14k4_SPECSIG","counter_14k1_SPECSIG","counter_14k2_SPECSIG","counter_14k3_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k8_SPECSIG","counter_14k9_SPECSIG","cycle_counter1_SPECSIG","cycle_counter2_SPECSIG","cycle_counter3_SPECSIG","cycle_counter4_SPECSIG","cycle_counter5_SPECSIG","cycle_counter6_SPECSIG");
+          
+            pterms["FB2_0"]=new Array("/cycle_counter7_SPECSIG","/cycle_counter0_SPECSIG","/cycle_counter1_SPECSIG","cycle_counter2_SPECSIG");
+          
+            pterms["FB2_1"]=new Array("/cycle_counter7_SPECSIG","cycle_counter0_SPECSIG","/cycle_counter2_SPECSIG");
+          
+            pterms["FB2_2"]=new Array("/cycle_counter7_SPECSIG","/cycle_counter0_SPECSIG","/cycle_counter1_SPECSIG","cycle_counter3_SPECSIG");
+          
+            pterms["FB2_3"]=new Array("/cycle_counter7_SPECSIG","cycle_counter1_SPECSIG","/cycle_counter2_SPECSIG","/cycle_counter3_SPECSIG");
+          
+            pterms["FB2_4"]=new Array("/counter_14k4_SPECSIG","/counter_14k5_SPECSIG","/counter_14k6_SPECSIG","/counter_14k7_SPECSIG","/counter_14k9_SPECSIG");
+          
+            pterms["FB2_5"]=new Array("/counter_14k8_SPECSIG","/counter_14k9_SPECSIG");
+          
+            pterms["FB2_40"]=new Array("clk_out_3_84M","/cycle_counter7_SPECSIG");
+          
+            pterms["FB2_52"]=new Array("counter_14k0_SPECSIG");
+          
+          d1["counter_14k2_SPECSIG"]=new Array("FB1_10");
+          
+              gblclk["counter_14k2_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k2_SPECSIG"]="GND";
+          d1["counter_14k3_SPECSIG"]=new Array("FB1_13");
+          
+              gblclk["counter_14k3_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k3_SPECSIG"]="GND";
+          d1["counter_14k4_SPECSIG"]=new Array("FB1_16");
+          
+              gblclk["counter_14k4_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k4_SPECSIG"]="GND";
+          d1["counter_14k6_SPECSIG"]=new Array("FB1_19");
+          
+              gblclk["counter_14k6_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k6_SPECSIG"]="GND";
+          d1["counter_14k7_SPECSIG"]=new Array("FB1_22");
+          
+              gblclk["counter_14k7_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k7_SPECSIG"]="GND";
+          d1["counter_14k8_SPECSIG"]=new Array("FB1_25");
+          
+              gblclk["counter_14k8_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k8_SPECSIG"]="GND";
+          d2["counter_14k5_SPECSIG"]=new Array("FB1_19","FB1_1","FB1_2","FB1_3","FB1_4");
+          
+              gblclk["counter_14k5_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k5_SPECSIG"]="GND";
+          d2["counter_14k9_SPECSIG"]=new Array("FB1_0","FB1_34");
+          
+              gblclk["counter_14k9_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k9_SPECSIG"]="GND";
+          d1["cycle_counter0_SPECSIG"]=new Array("FB1_34");
+          
+              gblclk["cycle_counter0_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter0_SPECSIG"]="GND";
+          d1["cycle_counter1_SPECSIG"]=new Array("FB1_37");
+          
+              gblclk["cycle_counter1_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter1_SPECSIG"]="GND";
+          d1["cycle_counter2_SPECSIG"]=new Array("FB1_40");
+          
+              gblclk["cycle_counter2_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter2_SPECSIG"]="GND";
+          d1["cycle_counter3_SPECSIG"]=new Array("FB1_43");
+          
+              gblclk["cycle_counter3_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter3_SPECSIG"]="GND";
+          d1["cycle_counter4_SPECSIG"]=new Array("FB1_46");
+          
+              gblclk["cycle_counter4_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter4_SPECSIG"]="GND";
+          d1["cycle_counter5_SPECSIG"]=new Array("FB1_49");
+          
+              gblclk["cycle_counter5_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter5_SPECSIG"]="GND";
+          d1["cycle_counter6_SPECSIG"]=new Array("FB1_52");
+          
+              gblclk["cycle_counter6_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter6_SPECSIG"]="GND";
+          d1["cycle_counter7_SPECSIG"]=new Array("FB1_55");
+          
+              gblclk["cycle_counter7_SPECSIG"]=new Array("clk_in");
+            prld["cycle_counter7_SPECSIG"]="GND";
+          d1["bpsk_out"]=new Array("FB2_40");
+          
+          d2["bpsk_out"]=new Array("FB2_1","FB2_0","FB2_2","FB2_3");
+          
+              gblclk["bpsk_out"]=new Array("clk_in");
+            prld["bpsk_out"]="GND";
+          d2["clk_out_14k"]=new Array("FB2_5","FB2_4");
+          
+              gblclk["clk_out_14k"]=new Array("clk_in");
+            prld["clk_out_14k"]="GND";
+          d2["clk_out_3_84M"]=new Array("GND");
+          
+              gblclk["clk_out_3_84M"]=new Array("clk_in");
+            prld["clk_out_3_84M"]="GND";
+          d1["counter_14k1_SPECSIG"]=new Array("FB2_52");
+          
+              gblclk["counter_14k1_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k1_SPECSIG"]="GND";
+          d2["counter_14k0_SPECSIG"]=new Array("GND");
+          
+              gblclk["counter_14k0_SPECSIG"]=new Array("clk_in");
+            prld["counter_14k0_SPECSIG"]="GND";
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "E:/ISE/CPLD_CODE/slz_bpsk/bpsk_modulator_fsm.xst" -ofn "E:/ISE/CPLD_CODE/slz_bpsk/bpsk_modulator_fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c32a-VQ44-6 bpsk_modulator_fsm.ngc bpsk_modulator_fsm.ngd  
+cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 bpsk_modulator_fsm.ngd 
+XSLTProcess bpsk_modulator_fsm_build.xml 
+tsim -intstyle ise bpsk_modulator_fsm bpsk_modulator_fsm.nga 
+taengine -intstyle ise -f bpsk_modulator_fsm -w --format html1 -l bpsk_modulator_fsm_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i bpsk_modulator_fsm 
+XSLTProcess bpsk_modulator_fsm_build.xml 
+XSLTProcess bpsk_modulator_fsm_build.xml 
+XSLTProcess bpsk_modulator_fsm_build.xml 
+XSLTProcess bpsk_modulator_fsm_build.xml 

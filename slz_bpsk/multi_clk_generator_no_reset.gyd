@@ -1,0 +1,17 @@
+Pin Freeze File:  version P.20131013
+
+2C32A44VQ XC2C32A-6-VQ44
+clk_in S:PIN1
+clk_out_14k S:PIN8
+clk_out_3_84M S:PIN12
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_7 counter_14k<0> counter_14k<1> counter_14k<2> counter_14k<3>
+		 counter_14k<4> counter_14k<6> counter_14k<7> counter_14k<8>
+		 counter_14k<9> counter_14k<5>
+PARTITION FB2_12 clk_out_14k clk_out_3_84M
+
+

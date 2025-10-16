@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/ISE/CPLD_CODE/slz_bpsk/multi_clk_generator_no_reset.xst" -ofn "E:/ISE/CPLD_CODE/slz_bpsk/multi_clk_generator_no_reset.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc net.ucf -p xc2c32a-VQ44-6 multi_clk_generator_no_reset.ngc multi_clk_generator_no_reset.ngd  
+cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 multi_clk_generator_no_reset.ngd 
+tsim -intstyle ise multi_clk_generator_no_reset multi_clk_generator_no_reset.nga 
+hprep6 -s IEEE1149 -i multi_clk_generator_no_reset 

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="slz_bpsk.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="bpsk.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="bpsk.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="bpsk.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="bpsk.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="bpsk.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="bpsk.jed"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="bpsk.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="bpsk.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="bpsk.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="bpsk.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="bpsk.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="bpsk.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="bpsk.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bpsk.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="bpsk.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="bpsk.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="bpsk.vm6"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="bpsk.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="bpsk_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="bpsk_modulator_fsm.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="bpsk_modulator_fsm.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="bpsk_modulator_fsm.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="bpsk_modulator_fsm.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="bpsk_modulator_fsm.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="bpsk_modulator_fsm.jed"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="bpsk_modulator_fsm.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="bpsk_modulator_fsm.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="bpsk_modulator_fsm.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="bpsk_modulator_fsm.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="bpsk_modulator_fsm.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="bpsk_modulator_fsm.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="bpsk_modulator_fsm.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bpsk_modulator_fsm.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="bpsk_modulator_fsm.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="bpsk_modulator_fsm.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="bpsk_modulator_fsm.vm6"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="bpsk_modulator_fsm.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="bpsk_modulator_fsm_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bpsk_modulator_fsm_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="bpsk_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bpsk_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="multi_clk_generator_no_reset.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="multi_clk_generator_no_reset.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="multi_clk_generator_no_reset.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="multi_clk_generator_no_reset.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="multi_clk_generator_no_reset.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="multi_clk_generator_no_reset.jed"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="multi_clk_generator_no_reset.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="multi_clk_generator_no_reset.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="multi_clk_generator_no_reset.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="multi_clk_generator_no_reset.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="multi_clk_generator_no_reset.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="multi_clk_generator_no_reset.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="multi_clk_generator_no_reset.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="multi_clk_generator_no_reset.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="multi_clk_generator_no_reset.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="multi_clk_generator_no_reset.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="multi_clk_generator_no_reset.vm6"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="multi_clk_generator_no_reset.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="multi_clk_generator_no_reset_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="multi_clk_generator_no_reset_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="psk_modulator.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="psk_modulator.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="psk_modulator.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="psk_modulator.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="psk_modulator.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="psk_modulator.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="psk_modulator.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="psk_modulator.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="psk_modulator.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="psk_modulator.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="psk_modulator.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="psk_modulator.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="psk_modulator.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="psk_modulator.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="psk_modulator.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="psk_modulator.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="psk_modulator.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="psk_modulator.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="psk_modulator.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="psk_modulator.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="psk_modulator.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="psk_modulator.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="psk_modulator_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="psk_modulator_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="psk_modulator_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="psk_modulator_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="psk_modulator_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="psk_modulator_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="psk_modulator_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1760580994" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1760580994">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1760583018" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7527136902762287030" xil_pn:start_ts="1760583018">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1760611895" xil_pn:in_ck="3972342580" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="7819082011348326024" xil_pn:start_ts="1760611891">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="bpsk.ngr"/>
+      <outfile xil_pn:name="psk_modulator.lso"/>
+      <outfile xil_pn:name="psk_modulator.ngc"/>
+      <outfile xil_pn:name="psk_modulator.ngr"/>
+      <outfile xil_pn:name="psk_modulator.prj"/>
+      <outfile xil_pn:name="psk_modulator.stx"/>
+      <outfile xil_pn:name="psk_modulator.syr"/>
+      <outfile xil_pn:name="psk_modulator.xst"/>
+      <outfile xil_pn:name="psk_modulator_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1760583021" xil_pn:in_ck="146153502003" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-46716803236622714" xil_pn:start_ts="1760583021">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1760611898" xil_pn:in_ck="-8617172920253495758" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="1180904427112756825" xil_pn:start_ts="1760611895">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="psk_modulator.bld"/>
+      <outfile xil_pn:name="psk_modulator.ngd"/>
+      <outfile xil_pn:name="psk_modulator_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1760611909" xil_pn:in_ck="6604223038365146979" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="8265423634994972663" xil_pn:start_ts="1760611898">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="psk_modulator.chk"/>
+      <outfile xil_pn:name="psk_modulator.cxt"/>
+      <outfile xil_pn:name="psk_modulator.gyd"/>
+      <outfile xil_pn:name="psk_modulator.log"/>
+      <outfile xil_pn:name="psk_modulator.mfd"/>
+      <outfile xil_pn:name="psk_modulator.nga"/>
+      <outfile xil_pn:name="psk_modulator.pad"/>
+      <outfile xil_pn:name="psk_modulator.pnx"/>
+      <outfile xil_pn:name="psk_modulator.rpt"/>
+      <outfile xil_pn:name="psk_modulator.vm6"/>
+      <outfile xil_pn:name="psk_modulator.xml"/>
+      <outfile xil_pn:name="psk_modulator_build.xml"/>
+      <outfile xil_pn:name="psk_modulator_html"/>
+      <outfile xil_pn:name="psk_modulator_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1760611911" xil_pn:in_ck="-907166437113422365" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1760611909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="psk_modulator.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1760583047" xil_pn:in_ck="4890674731861578635" xil_pn:name="TRAN_impactProgrammingTool_CPLD" xil_pn:prop_ck="7996569619189960536" xil_pn:start_ts="1760583047">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1760581013" xil_pn:in_ck="-5373060508011189582" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1760581011">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

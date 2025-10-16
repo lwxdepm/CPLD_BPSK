@@ -1,0 +1,4 @@
+NET 	"clk_in" 					LOC = "p1";
+NET 	"clk_out_3_84M" 			LOC = "p12";
+NET 	"clk_out_14k" 				LOC = "p8";
+NET 	"bpsk_out" 					LOC = "p6";
