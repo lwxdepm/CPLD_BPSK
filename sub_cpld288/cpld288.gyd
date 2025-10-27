@@ -1,0 +1,19 @@
+Pin Freeze File:  version P.20131013
+
+2C32A44VQ XC2C32A-6-VQ44
+clk_in S:PIN1
+bpsk_out S:PIN12
+carrier_out S:PIN8
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 counter_14k<2> counter_14k<3> counter_14k<4> counter_14k<6>
+		 counter_14k<7> counter_14k<8> counter_14k<5> counter_14k<9>
+		 cycle_counter<0> cycle_counter<1> cycle_counter<2> cycle_counter<3>
+		 cycle_counter<4> cycle_counter<5> cycle_counter<6> cycle_counter<7>
+		
+PARTITION FB2_11 counter_14k<1> carrier_out bpsk_out counter_14k<0>
+		 carrier_acc<6> carrier_acc<7>
+

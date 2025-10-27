@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: psk_modulator.prj
 
@@ -85,7 +85,7 @@ Analysis of file <"psk_modulator.prj"> succeeded.
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for module <psk_modulator> in library <work> with parameters.
-	DATA_SEQUENCE = "00011011000111100001101100011110000110110001111000011011000111100001101100011110000110110001111000011011000111100001101100011110"
+	DATA_SEQUENCE = "00001010111011000111110011010010000010101110110001111100110100100000101011101100011111001101001000001010111011000111110011010010"
 	DIV_FACTOR_14K = "00000000000000000000001000100000"
 	MAX_COUNT_14K = "00000000000000000000001000011111"
 	TOGGLE_POINT_14K = "00000000000000000000000100010000"
@@ -95,7 +95,7 @@ Analyzing hierarchy for module <psk_modulator> in library <work> with parameters
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <psk_modulator>.
-	DATA_SEQUENCE = 128'b00011011000111100001101100011110000110110001111000011011000111100001101100011110000110110001111000011011000111100001101100011110
+	DATA_SEQUENCE = 128'b00001010111011000111110011010010000010101110110001111100110100100000101011101100011111001101001000001010111011000111110011010010
 	DIV_FACTOR_14K = 32'sb00000000000000000000001000100000
 	MAX_COUNT_14K = 32'sb00000000000000000000001000011111
 	TOGGLE_POINT_14K = 32'sb00000000000000000000000100010000
@@ -110,19 +110,17 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <psk_modulator>.
     Related source file is "bpsk.v".
-    Found 128x1-bit ROM for signal <$COND_2>.
+WARNING:Xst:646 - Signal <clk_out_14k> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 128x1-bit ROM for signal <$COND_3>.
     Found 1-bit register for signal <bpsk_out>.
-    Found 1-bit register for signal <clk_out_14k>.
+    Found 1-bit xor2 for signal <bpsk_out$xor0000> created at line 82.
     Found 1-bit register for signal <clk_out_3_84M>.
-    Found 1-bit xor2 for signal <bpsk_out$xor0000> created at line 81.
-    Found 10-bit comparator less for signal <clk_out_14k$cmp_lt0000> created at line 58.
     Found 10-bit up counter for signal <counter_14k>.
     Found 8-bit up counter for signal <cycle_counter>.
     Summary:
 	inferred   1 ROM(s).
 	inferred   2 Counter(s).
 	inferred   1 D-type flip-flop(s).
-	inferred   1 Comparator(s).
 	inferred   1 Xor(s).
 Unit <psk_modulator> synthesized.
 
@@ -136,10 +134,8 @@ Macro Statistics
 # Counters                                             : 2
  10-bit up counter                                     : 1
  8-bit up counter                                      : 1
-# Registers                                            : 3
- 1-bit register                                        : 3
-# Comparators                                          : 1
- 10-bit comparator less                                : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
 # Xors                                                 : 1
  1-bit xor2                                            : 1
 
@@ -171,7 +167,6 @@ Macro Statistics
 Optimizing unit <psk_modulator> ...
   implementation constraint: INIT=r	 : clk_out_3_84M
   implementation constraint: INIT=r	 : bpsk_out
-  implementation constraint: INIT=r	 : clk_out_14k
   implementation constraint: INIT=r	 : cycle_counter_7
   implementation constraint: INIT=r	 : cycle_counter_6
   implementation constraint: INIT=r	 : cycle_counter_5
@@ -218,34 +213,35 @@ Clock Enable                       : YES
 wysiwyg                            : NO
 
 Design Statistics
-# IOs                              : 4
+# IOs                              : 2
 
 Cell Usage :
-# BELS                             : 84
-#      AND2                        : 31
-#      AND3                        : 2
-#      AND4                        : 2
+# BELS                             : 96
+#      AND2                        : 38
+#      AND3                        : 3
+#      AND4                        : 1
 #      GND                         : 1
-#      INV                         : 27
-#      OR2                         : 4
+#      INV                         : 29
+#      OR2                         : 6
+#      OR3                         : 1
 #      XOR2                        : 17
-# FlipFlops/Latches                : 21
-#      FD                          : 13
+# FlipFlops/Latches                : 20
+#      FD                          : 12
 #      FDCE                        : 8
-# IO Buffers                       : 4
+# IO Buffers                       : 2
 #      IBUF                        : 1
-#      OBUF                        : 3
+#      OBUF                        : 1
 =========================================================================
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.91 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.81 secs
  
 --> 
 
-Total memory usage is 4515160 kilobytes
+Total memory usage is 4515168 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

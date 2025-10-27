@@ -1,0 +1,3 @@
+NET 	"clk_in" 					LOC = "p1";
+NET 	"bpsk_out" 					LOC = "p12";
+NET 	"carrier_out" 					LOC = "p8";

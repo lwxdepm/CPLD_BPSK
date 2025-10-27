@@ -8,18 +8,22 @@
 FDCPE_bpsk_out: FDCPE port map (bpsk_out,bpsk_out_D,clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bpsk_out_D <= (clk_out_3_84M AND NOT cycle_counter(7))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT cycle_counter(7) AND cycle_counter(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(2) AND cycle_counter(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND cycle_counter(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(1) AND NOT cycle_counter(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND cycle_counter(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(1) AND NOT cycle_counter(4))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND NOT cycle_counter(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(1) AND cycle_counter(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(3) AND NOT cycle_counter(2) AND NOT cycle_counter(4))
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND NOT cycle_counter(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(1) AND cycle_counter(3))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND cycle_counter(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(2) AND NOT cycle_counter(3)));
-</td></tr><tr><td>
-FDCPE_clk_out_14k: FDCPE port map (clk_out_14k,clk_out_14k_D,clk_in,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clk_out_14k_D <= ((NOT counter_14k(8) AND NOT counter_14k(9))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_14k(4) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(7) AND NOT counter_14k(9)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(3) AND cycle_counter(2) AND NOT cycle_counter(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND NOT cycle_counter(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(1) AND NOT cycle_counter(2) AND cycle_counter(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND NOT cycle_counter(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cycle_counter(1) AND cycle_counter(2) AND cycle_counter(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cycle_counter(7) AND NOT cycle_counter(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(3) AND cycle_counter(1) AND cycle_counter(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(4)));
 </td></tr><tr><td>
 FTCPE_clk_out_3_84M: FTCPE port map (clk_out_3_84M,'0',clk_in,'0','0','1');
 </td></tr><tr><td>
@@ -38,88 +42,88 @@ FTCPE_counter_14k4: FTCPE port map (counter_14k(4),counter_14k_T(4),clk_in,'0','
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3));
 </td></tr><tr><td>
 FTCPE_counter_14k5: FTCPE port map (counter_14k(5),counter_14k_T(5),clk_in,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(5) <= ((counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(5))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(6))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(7))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(8))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND NOT counter_14k(9)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(5) <= ((counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND NOT counter_14k(9)));
 </td></tr><tr><td>
 FTCPE_counter_14k6: FTCPE port map (counter_14k(6),counter_14k_T(6),clk_in,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(6) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(6) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(5));
 </td></tr><tr><td>
 FTCPE_counter_14k7: FTCPE port map (counter_14k(7),counter_14k_T(7),clk_in,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(7) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(5) AND counter_14k(6));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(7) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(5) AND counter_14k(6));
 </td></tr><tr><td>
 FTCPE_counter_14k8: FTCPE port map (counter_14k(8),counter_14k_T(8),clk_in,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(8) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(5) AND counter_14k(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(8) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(5) AND counter_14k(6) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(7));
 </td></tr><tr><td>
 FTCPE_counter_14k9: FTCPE port map (counter_14k(9),counter_14k_T(9),clk_in,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(9) <= ((counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND counter_14k(5) AND counter_14k(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_14k_T(9) <= ((counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND counter_14k(5) AND counter_14k(6) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(7) AND counter_14k(8))
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(7) AND NOT counter_14k(8) AND counter_14k(9)));
 </td></tr><tr><td>
 FTCPE_cycle_counter0: FTCPE port map (cycle_counter(0),cycle_counter_T(0),clk_in,'0','0','1');
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(0) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(2) AND counter_14k(3) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(0) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(3) AND counter_14k(4) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(7) AND NOT counter_14k(8) AND counter_14k(9));
 </td></tr><tr><td>
 FTCPE_cycle_counter1: FTCPE port map (cycle_counter(1),cycle_counter_T(1),clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(1) <= (cycle_counter(0) AND counter_14k(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9));
 </td></tr><tr><td>
 FTCPE_cycle_counter2: FTCPE port map (cycle_counter(2),cycle_counter_T(2),clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(2) <= (cycle_counter(0) AND counter_14k(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(1));
 </td></tr><tr><td>
 FTCPE_cycle_counter3: FTCPE port map (cycle_counter(3),cycle_counter_T(3),clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(3) <= (cycle_counter(0) AND counter_14k(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2));
 </td></tr><tr><td>
 FTCPE_cycle_counter4: FTCPE port map (cycle_counter(4),cycle_counter_T(4),clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(4) <= (cycle_counter(0) AND counter_14k(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(2));
 </td></tr><tr><td>
 FTCPE_cycle_counter5: FTCPE port map (cycle_counter(5),cycle_counter_T(5),clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(5) <= (cycle_counter(0) AND counter_14k(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(3) AND cycle_counter(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(2) AND cycle_counter(4));
 </td></tr><tr><td>
 FTCPE_cycle_counter6: FTCPE port map (cycle_counter(6),cycle_counter_T(6),clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(6) <= (cycle_counter(0) AND counter_14k(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(3) AND cycle_counter(4) AND cycle_counter(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(2) AND cycle_counter(4) AND cycle_counter(5));
 </td></tr><tr><td>
 FTCPE_cycle_counter7: FTCPE port map (cycle_counter(7),cycle_counter_T(7),clk_in,'0','0','1');
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cycle_counter_T(7) <= (cycle_counter(0) AND counter_14k(0) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(3) AND cycle_counter(4) AND cycle_counter(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(2) AND cycle_counter(4) AND cycle_counter(5) AND 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cycle_counter(6));
 </td></tr><tr><td>
 </td></tr><tr><td>

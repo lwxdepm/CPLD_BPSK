@@ -3,7 +3,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: psk_modulator                       Date: 10-16-2025,  6:51PM
+Design Name: psk_modulator                       Date: 10-20-2025,  7:29PM
 Device Used: XC2C32A-6-VQ44
 Fitting Status: Successful
 
@@ -11,16 +11,16 @@ Fitting Status: Successful
 
 Macrocells     Product Terms    Function Block   Registers      Pins           
 Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
-21 /32  ( 66%) 27  /112  ( 24%) 30  /80   ( 37%) 21 /32  ( 66%) 4  /33  ( 12%)
+20 /32  ( 62%) 29  /112  ( 26%) 25  /80   ( 31%) 20 /32  ( 62%) 2  /33  (  6%)
 
 ** Function Block Resources **
 
 Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
 Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
 FB1      16/16*    17/40    19/56     0/16    0/1      0/1      0/1      0/1
-FB2       5/16     13/40     8/56     3/16    0/1      0/1      0/1      0/1
+FB2       4/16      8/40    10/56     1/16    0/1      0/1      0/1      0/1
          -----    -------  -------   -----    ---      ---      ---      ---
-Total    21/32     30/80    27/112    3/32    0/2      0/2      0/2      0/2 
+Total    20/32     25/80    29/112    1/32    0/2      0/2      0/2      0/2 
 
 CTC - Control Term Clock
 CTR - Control Term Reset
@@ -42,14 +42,14 @@ Signal 'clk_in' mapped onto global clock net GCK2.
 Signal Type    Required     Mapped  |  Pin Type            Used    Total 
 ------------------------------------|------------------------------------
                                     |  I                :     0      1
-Input         :    0           0    |  I/O              :     3     24
-Output        :    3           3    |  GCK/IO           :     1      3
+Input         :    0           0    |  I/O              :     1     24
+Output        :    1           1    |  GCK/IO           :     1      3
 Bidirectional :    0           0    |  GTS/IO           :     0      4
 GCK           :    1           1    |  GSR/IO           :     0      1
 GTS           :    0           0    |  
 GSR           :    0           0    |  
                  ----        ----
-        Total      4           4
+        Total      2           2
 
 End of Mapped Resource Summary
 **************************  Errors and Warnings  ***************************
@@ -63,15 +63,13 @@ INFO:Cpld - Inferring BUFG constraint for signal 'clk_in' based upon the LOC
    ignored.
 *************************  Summary of Mapped Logic  ************************
 
-** 3 Outputs **
+** 1 Outputs **
 
 Signal              Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
 Name                Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
-bpsk_out            5     6     1    FB2_11  6     I/O       O       LVCMOS18           FAST DFF     RESET
-clk_out_14k         2     6     1    FB2_12  8     I/O       O       LVCMOS18           FAST DFF     RESET
-clk_out_3_84M       0     0     1    FB2_13  12    I/O       O       LVCMOS18           FAST TFF     RESET
+bpsk_out            9     7     1    FB2_13  12    I/O       O       LVCMOS18           FAST DFF     RESET
 
-** 18 Buried Nodes **
+** 19 Buried Nodes **
 
 Signal              Total Total Loc     Reg     Reg Init
 Name                Pts   Inps          Use     State
@@ -91,8 +89,9 @@ cycle_counter<4>    1     14    FB1_13  TFF     RESET
 cycle_counter<5>    1     15    FB1_14  TFF     RESET
 cycle_counter<6>    1     16    FB1_15  TFF     RESET
 cycle_counter<7>    1     17    FB1_16  TFF     RESET
-counter_14k<1>      1     1     FB2_15  TFF     RESET
-counter_14k<0>      0     0     FB2_16  TFF     RESET
+counter_14k<1>      1     1     FB2_14  TFF     RESET
+counter_14k<0>      0     0     FB2_15  TFF     RESET
+clk_out_3_84M       0     0     FB2_16  TFF     RESET
 
 ** 1 Inputs **
 
@@ -178,9 +177,9 @@ cycle_counter<7>  XXXXXXXXXXXXXXXXX....................... 17
                            0         0         0         0
 *********************************** FB2  ***********************************
 This function block is part of I/O Bank number:               1
-Number of function block inputs used/remaining:               13/27
+Number of function block inputs used/remaining:               8/32
 Number of function block control terms used/remaining:        0/4
-Number of PLA product terms used/remaining:                   8/48
+Number of PLA product terms used/remaining:                   10/46
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB2_1   39   I/O           
@@ -193,27 +192,24 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB2_8   2    I/O           
 (unused)                      0     FB2_9   3    I/O           
 (unused)                      0     FB2_10  5    I/O           
-bpsk_out                      5     FB2_11  6    I/O     O                 
-clk_out_14k                   2     FB2_12  8    I/O     O                 
-clk_out_3_84M                 0     FB2_13  12   I/O     O                 
-(unused)                      0     FB2_14  13   I/O           
-counter_14k<1>                1     FB2_15  14   I/O     (b)               
-counter_14k<0>                0     FB2_16  16   I/O     (b)               
+(unused)                      0     FB2_11  6    I/O           
+(unused)                      0     FB2_12  8    I/O           
+bpsk_out                      9     FB2_13  12   I/O     O                 
+counter_14k<1>                1     FB2_14  13   I/O     (b)               
+counter_14k<0>                0     FB2_15  14   I/O     (b)               
+clk_out_3_84M                 0     FB2_16  16   I/O     (b)               
 
 Signals Used by Logic in Function Block
-  1: clk_out_3_84M      6: counter_14k<7>    10: cycle_counter<1> 
-  2: counter_14k<0>     7: counter_14k<8>    11: cycle_counter<2> 
-  3: counter_14k<4>     8: counter_14k<9>    12: cycle_counter<3> 
-  4: counter_14k<5>     9: cycle_counter<0>  13: cycle_counter<7> 
-  5: counter_14k<6>   
+  1: clk_out_3_84M      4: cycle_counter<1>   7: cycle_counter<4> 
+  2: counter_14k<0>     5: cycle_counter<2>   8: cycle_counter<7> 
+  3: cycle_counter<0>   6: cycle_counter<3> 
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-bpsk_out          X.......XXXXX........................... 6       
-clk_out_14k       ..XXXXXX................................ 6       
-clk_out_3_84M     ........................................ 0       
+bpsk_out          X.XXXXXX................................ 7       
 counter_14k<1>    .X...................................... 1       
 counter_14k<0>    ........................................ 0       
+clk_out_3_84M     ........................................ 0       
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *******************************  Equations  ********************************
@@ -223,18 +219,22 @@ counter_14k<0>    ........................................ 0
 FDCPE_bpsk_out: FDCPE port map (bpsk_out,bpsk_out_D,clk_in,'0','0','1');
 bpsk_out_D <= (clk_out_3_84M AND NOT cycle_counter(7))
 	XOR ((NOT cycle_counter(7) AND cycle_counter(0) AND 
-	NOT cycle_counter(2))
+	NOT cycle_counter(2) AND cycle_counter(4))
+	OR (NOT cycle_counter(7) AND cycle_counter(3) AND 
+	NOT cycle_counter(1) AND NOT cycle_counter(2))
+	OR (NOT cycle_counter(7) AND cycle_counter(3) AND 
+	NOT cycle_counter(1) AND NOT cycle_counter(4))
 	OR (NOT cycle_counter(7) AND NOT cycle_counter(0) AND 
-	NOT cycle_counter(1) AND cycle_counter(2))
+	cycle_counter(3) AND NOT cycle_counter(2) AND NOT cycle_counter(4))
 	OR (NOT cycle_counter(7) AND NOT cycle_counter(0) AND 
-	NOT cycle_counter(1) AND cycle_counter(3))
-	OR (NOT cycle_counter(7) AND cycle_counter(1) AND 
-	NOT cycle_counter(2) AND NOT cycle_counter(3)));
-
-FDCPE_clk_out_14k: FDCPE port map (clk_out_14k,clk_out_14k_D,clk_in,'0','0','1');
-clk_out_14k_D <= ((NOT counter_14k(8) AND NOT counter_14k(9))
-	OR (NOT counter_14k(4) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
-	NOT counter_14k(7) AND NOT counter_14k(9)));
+	NOT cycle_counter(3) AND cycle_counter(2) AND NOT cycle_counter(4))
+	OR (NOT cycle_counter(7) AND NOT cycle_counter(3) AND 
+	cycle_counter(1) AND NOT cycle_counter(2) AND cycle_counter(4))
+	OR (NOT cycle_counter(7) AND NOT cycle_counter(3) AND 
+	NOT cycle_counter(1) AND cycle_counter(2) AND cycle_counter(4))
+	OR (NOT cycle_counter(7) AND NOT cycle_counter(0) AND 
+	cycle_counter(3) AND cycle_counter(1) AND cycle_counter(2) AND 
+	cycle_counter(4)));
 
 FTCPE_clk_out_3_84M: FTCPE port map (clk_out_3_84M,'0',clk_in,'0','0','1');
 
@@ -253,88 +253,88 @@ counter_14k_T(4) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND
 	counter_14k(3));
 
 FTCPE_counter_14k5: FTCPE port map (counter_14k(5),counter_14k_T(5),clk_in,'0','0','1');
-counter_14k_T(5) <= ((counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(5))
-	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(6))
-	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(7))
-	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(8))
-	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND NOT counter_14k(9)));
+counter_14k_T(5) <= ((counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(5))
+	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(6))
+	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(7))
+	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(8))
+	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND NOT counter_14k(9)));
 
 FTCPE_counter_14k6: FTCPE port map (counter_14k(6),counter_14k_T(6),clk_in,'0','0','1');
-counter_14k_T(6) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(5));
+counter_14k_T(6) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(5));
 
 FTCPE_counter_14k7: FTCPE port map (counter_14k(7),counter_14k_T(7),clk_in,'0','0','1');
-counter_14k_T(7) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(5) AND counter_14k(6));
+counter_14k_T(7) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(5) AND counter_14k(6));
 
 FTCPE_counter_14k8: FTCPE port map (counter_14k(8),counter_14k_T(8),clk_in,'0','0','1');
-counter_14k_T(8) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(5) AND counter_14k(6) AND 
+counter_14k_T(8) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(5) AND counter_14k(6) AND 
 	counter_14k(7));
 
 FTCPE_counter_14k9: FTCPE port map (counter_14k(9),counter_14k_T(9),clk_in,'0','0','1');
-counter_14k_T(9) <= ((counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND counter_14k(5) AND counter_14k(6) AND 
+counter_14k_T(9) <= ((counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND counter_14k(5) AND counter_14k(6) AND 
 	counter_14k(7) AND counter_14k(8))
-	OR (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
+	OR (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
 	NOT counter_14k(7) AND NOT counter_14k(8) AND counter_14k(9)));
 
 FTCPE_cycle_counter0: FTCPE port map (cycle_counter(0),cycle_counter_T(0),clk_in,'0','0','1');
-cycle_counter_T(0) <= (counter_14k(0) AND counter_14k(4) AND counter_14k(1) AND 
-	counter_14k(2) AND counter_14k(3) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
+cycle_counter_T(0) <= (counter_14k(0) AND counter_14k(1) AND counter_14k(2) AND 
+	counter_14k(3) AND counter_14k(4) AND NOT counter_14k(5) AND NOT counter_14k(6) AND 
 	NOT counter_14k(7) AND NOT counter_14k(8) AND counter_14k(9));
 
 FTCPE_cycle_counter1: FTCPE port map (cycle_counter(1),cycle_counter_T(1),clk_in,'0','0','1');
 cycle_counter_T(1) <= (cycle_counter(0) AND counter_14k(0) AND 
-	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
 	counter_14k(9));
 
 FTCPE_cycle_counter2: FTCPE port map (cycle_counter(2),cycle_counter_T(2),clk_in,'0','0','1');
 cycle_counter_T(2) <= (cycle_counter(0) AND counter_14k(0) AND 
-	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
 	counter_14k(9) AND cycle_counter(1));
 
 FTCPE_cycle_counter3: FTCPE port map (cycle_counter(3),cycle_counter_T(3),clk_in,'0','0','1');
 cycle_counter_T(3) <= (cycle_counter(0) AND counter_14k(0) AND 
-	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
 	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2));
 
 FTCPE_cycle_counter4: FTCPE port map (cycle_counter(4),cycle_counter_T(4),clk_in,'0','0','1');
 cycle_counter_T(4) <= (cycle_counter(0) AND counter_14k(0) AND 
-	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-	cycle_counter(3));
+	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+	cycle_counter(2));
 
 FTCPE_cycle_counter5: FTCPE port map (cycle_counter(5),cycle_counter_T(5),clk_in,'0','0','1');
 cycle_counter_T(5) <= (cycle_counter(0) AND counter_14k(0) AND 
-	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-	cycle_counter(3) AND cycle_counter(4));
+	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+	cycle_counter(2) AND cycle_counter(4));
 
 FTCPE_cycle_counter6: FTCPE port map (cycle_counter(6),cycle_counter_T(6),clk_in,'0','0','1');
 cycle_counter_T(6) <= (cycle_counter(0) AND counter_14k(0) AND 
-	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-	cycle_counter(3) AND cycle_counter(4) AND cycle_counter(5));
+	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+	cycle_counter(2) AND cycle_counter(4) AND cycle_counter(5));
 
 FTCPE_cycle_counter7: FTCPE port map (cycle_counter(7),cycle_counter_T(7),clk_in,'0','0','1');
 cycle_counter_T(7) <= (cycle_counter(0) AND counter_14k(0) AND 
-	counter_14k(4) AND counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND 
+	counter_14k(1) AND counter_14k(2) AND counter_14k(3) AND counter_14k(4) AND 
 	NOT counter_14k(5) AND NOT counter_14k(6) AND NOT counter_14k(7) AND NOT counter_14k(8) AND 
-	counter_14k(9) AND cycle_counter(1) AND cycle_counter(2) AND 
-	cycle_counter(3) AND cycle_counter(4) AND cycle_counter(5) AND 
+	counter_14k(9) AND cycle_counter(3) AND cycle_counter(1) AND 
+	cycle_counter(2) AND cycle_counter(4) AND cycle_counter(5) AND 
 	cycle_counter(6));
 
 
@@ -374,13 +374,13 @@ No. Name                           No. Name
   3 KPR                              25 GND                           
   4 GND                              26 VCCIO-UNUSED                  
   5 KPR                              27 KPR                           
-  6 bpsk_out                         28 KPR                           
+  6 KPR                              28 KPR                           
   7 VCCIO-1.8                        29 KPR                           
-  8 clk_out_14k                      30 KPR                           
+  8 KPR                              30 KPR                           
   9 TDI                              31 KPR                           
  10 TMS                              32 KPR                           
  11 TCK                              33 KPR                           
- 12 clk_out_3_84M                    34 KPR                           
+ 12 bpsk_out                         34 KPR                           
  13 KPR                              35 VCCAUX                        
  14 KPR                              36 KPR                           
  15 VCC                              37 KPR                           

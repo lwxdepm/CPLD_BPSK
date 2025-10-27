@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/psk_modulator_parameterized.xst" -ofn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/psk_modulator_parameterized.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc cpld288.ucf -p xc2c32a-VQ44-6 psk_modulator_parameterized.ngc psk_modulator_parameterized.ngd  

@@ -3,3 +3,5 @@ ngdbuild -intstyle ise -dd _ngo -uc net.ucf -p xc2c32a-VQ44-6 multi_clk_generato
 cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 multi_clk_generator_no_reset.ngd 
 tsim -intstyle ise multi_clk_generator_no_reset multi_clk_generator_no_reset.nga 
 hprep6 -s IEEE1149 -i multi_clk_generator_no_reset 
+XSLTProcess multi_clk_generator_no_reset_build.xml 
+XSLTProcess multi_clk_generator_no_reset_build.xml 

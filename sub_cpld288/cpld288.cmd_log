@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.xst" -ofn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c32a-VQ44-6 cpld288.ngc cpld288.ngd  
+cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 cpld288.ngd 
+XSLTProcess cpld288_build.xml 
+tsim -intstyle ise cpld288 cpld288.nga 
+taengine -intstyle ise -f cpld288 -w --format html1 -l cpld288_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i cpld288 
+xst -intstyle ise -ifn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.xst" -ofn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc cpld288.ucf -p xc2c32a-VQ44-6 cpld288.ngc cpld288.ngd  
+cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 cpld288.ngd 
+XSLTProcess cpld288_build.xml 
+tsim -intstyle ise cpld288 cpld288.nga 
+hprep6 -s IEEE1149 -i cpld288 
+xst -intstyle ise -ifn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.xst" -ofn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc cpld288.ucf -p xc2c32a-VQ44-6 cpld288.ngc cpld288.ngd  
+cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 cpld288.ngd 
+XSLTProcess cpld288_build.xml 
+tsim -intstyle ise cpld288 cpld288.nga 
+hprep6 -s IEEE1149 -i cpld288 
+xst -intstyle ise -ifn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.xst" -ofn "E:/ISE/CPLD_CODE/CPLD_BPSK/sub_cpld288/cpld288.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc cpld288.ucf -p xc2c32a-VQ44-6 cpld288.ngc cpld288.ngd  
+cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 cpld288.ngd 
+XSLTProcess cpld288_build.xml 
+tsim -intstyle ise cpld288 cpld288.nga 
+hprep6 -s IEEE1149 -i cpld288 

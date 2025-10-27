@@ -1,7 +1,7 @@
 Release 8.1i - Fit P.20131013
 Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
 
-10-16-2025  6:51PM
+10-20-2025  7:29PM
 
 NOTE: This file is designed to be imported into a spreadsheet program
 such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
@@ -23,13 +23,13 @@ P2|KPR||I/O|||1|||||||
 P3|KPR||I/O|||1|||||||
 P4|GND||GND||||||||||
 P5|KPR||I/O|||1|||||||
-P6|bpsk_out|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P6|KPR||I/O|||1|||||||
 P7||VCCIO-1.8|VCCIO|||1|||||||
-P8|clk_out_14k|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P8|KPR||I/O|||1|||||||
 P9|TDI||TDI||||||||||
 P10|TMS||TMS||||||||||
 P11|TCK||TCK||||||||||
-P12|clk_out_3_84M|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P12|bpsk_out|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
 P13|KPR||I/O|||1|||||||
 P14|KPR||I/O|||1|||||||
 P15||VCC|VCC||||||||||

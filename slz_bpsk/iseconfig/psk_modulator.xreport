@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2025-10-16T18:51:15</DateModified>
+  <DateModified>2025-10-27T16:23:05</DateModified>
   <ModuleName>psk_modulator</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/ISE/CPLD_CODE/CPLD_BPSK/slz_bpsk/iseconfig/psk_modulator.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/ISE/CPLD_CODE/CPLD_BPSK/slz_bpsk</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/ISE/CPLD_CODE/CPLD_BPSK/slz_bpsk\</ImplementationReportsDirectory>
   <DateInitialized>2025-10-16T18:51:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

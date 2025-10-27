@@ -1,4 +1,4 @@
 MO bpsk_modulator_fsm NULL bpsk.v vlg7B/bpsk__modulator__fsm.bin 1760580995
 MO bpsk NULL bpsk.v vlg74/bpsk.bin 1760582501
 MO multi_clk_generator_no_reset NULL bpsk.v vlg70/multi__clk__generator__no__reset.bin 1760582531
-MO psk_modulator NULL bpsk.v vlg4C/psk__modulator.bin 1760611892
+MO psk_modulator NULL bpsk.v vlg4C/psk__modulator.bin 1760959742

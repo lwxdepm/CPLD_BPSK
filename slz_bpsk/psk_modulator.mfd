@@ -1,25 +1,34 @@
 MDF Database:  version 1.0
 MDF_INFO | psk_modulator | XC2C32A-6-VQ44
-MACROCELL | 1 | 10 | bpsk_out_MC
+MACROCELL | 1 | 12 | bpsk_out_MC
 ATTRIBUTES | 8684290 | 0
-INPUTS | 6 | clk_out_3_84M  | cycle_counter<7>  | cycle_counter<0>  | cycle_counter<2>  | cycle_counter<1>  | cycle_counter<3>
-INPUTMC | 6 | 1 | 12 | 0 | 15 | 0 | 8 | 0 | 10 | 0 | 9 | 0 | 11
-EQ | 10 | 
+INPUTS | 7 | clk_out_3_84M  | cycle_counter<7>  | cycle_counter<0>  | cycle_counter<2>  | cycle_counter<4>  | cycle_counter<3>  | cycle_counter<1>
+INPUTMC | 7 | 1 | 15 | 0 | 15 | 0 | 8 | 0 | 10 | 0 | 12 | 0 | 11 | 0 | 9
+EQ | 19 | 
    bpsk_out := clk_out_3_84M & !cycle_counter<7>
 	$ !cycle_counter<7> & cycle_counter<0> & 
-	!cycle_counter<2>
+	!cycle_counter<2> & cycle_counter<4>
+	# !cycle_counter<7> & cycle_counter<3> & 
+	!cycle_counter<1> & !cycle_counter<2>
+	# !cycle_counter<7> & cycle_counter<3> & 
+	!cycle_counter<1> & !cycle_counter<4>
 	# !cycle_counter<7> & !cycle_counter<0> & 
-	!cycle_counter<1> & cycle_counter<2>
+	cycle_counter<3> & !cycle_counter<2> & !cycle_counter<4>
 	# !cycle_counter<7> & !cycle_counter<0> & 
-	!cycle_counter<1> & cycle_counter<3>
-	# !cycle_counter<7> & cycle_counter<1> & 
-	!cycle_counter<2> & !cycle_counter<3>;	// (5 pt, 6 inp)
+	!cycle_counter<3> & cycle_counter<2> & !cycle_counter<4>
+	# !cycle_counter<7> & !cycle_counter<3> & 
+	cycle_counter<1> & !cycle_counter<2> & cycle_counter<4>
+	# !cycle_counter<7> & !cycle_counter<3> & 
+	!cycle_counter<1> & cycle_counter<2> & cycle_counter<4>
+	# !cycle_counter<7> & !cycle_counter<0> & 
+	cycle_counter<3> & cycle_counter<1> & cycle_counter<2> & 
+	cycle_counter<4>;	// (9 pt, 7 inp)
    bpsk_out.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
-MACROCELL | 1 | 12 | clk_out_3_84M_MC
-ATTRIBUTES | 2151973634 | 0
-OUTPUTMC | 1 | 1 | 10
+MACROCELL | 1 | 15 | clk_out_3_84M_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 1 | 1 | 12
 INPUTS | 0
 EQ | 2 | 
    !clk_out_3_84M.T := Gnd;	// (0 pt, 0 inp)
@@ -28,56 +37,45 @@ GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 15 | cycle_counter<7>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 1 | 1 | 10
-INPUTS | 17 | cycle_counter<0>  | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>  | cycle_counter<2>  | cycle_counter<3>  | cycle_counter<4>  | cycle_counter<5>  | cycle_counter<6>
-INPUTMC | 17 | 0 | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14
+OUTPUTMC | 1 | 1 | 12
+INPUTS | 17 | cycle_counter<0>  | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<3>  | cycle_counter<1>  | cycle_counter<2>  | cycle_counter<4>  | cycle_counter<5>  | cycle_counter<6>
+INPUTMC | 17 | 0 | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 11 | 0 | 9 | 0 | 10 | 0 | 12 | 0 | 13 | 0 | 14
 EQ | 7 | 
    cycle_counter<7>.T := cycle_counter<0> & counter_14k<0> & 
-	counter_14k<4> & counter_14k<1> & counter_14k<2> & counter_14k<3> & 
+	counter_14k<1> & counter_14k<2> & counter_14k<3> & counter_14k<4> & 
 	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
-	counter_14k<9> & cycle_counter<1> & cycle_counter<2> & 
-	cycle_counter<3> & cycle_counter<4> & cycle_counter<5> & 
+	counter_14k<9> & cycle_counter<3> & cycle_counter<1> & 
+	cycle_counter<2> & cycle_counter<4> & cycle_counter<5> & 
 	cycle_counter<6>;	// (1 pt, 17 inp)
    cycle_counter<7>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 8 | cycle_counter<0>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 10
-INPUTS | 10 | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
-INPUTMC | 10 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
+OUTPUTMC | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 12
+INPUTS | 10 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
+INPUTMC | 10 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
 EQ | 4 | 
-   cycle_counter<0>.T := counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & !counter_14k<5> & !counter_14k<6> & 
+   cycle_counter<0>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & !counter_14k<5> & !counter_14k<6> & 
 	!counter_14k<7> & !counter_14k<8> & counter_14k<9>;	// (1 pt, 10 inp)
    cycle_counter<0>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
-MACROCELL | 1 | 15 | counter_14k<0>_MC
+MACROCELL | 1 | 14 | counter_14k<0>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 17 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
+OUTPUTMC | 17 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
 INPUTS | 0
 EQ | 2 | 
    !counter_14k<0>.T := Gnd;	// (0 pt, 0 inp)
    counter_14k<0>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
-MACROCELL | 0 | 2 | counter_14k<4>_MC
-ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 14 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 11
-INPUTS | 4 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>
-INPUTMC | 4 | 1 | 15 | 1 | 14 | 0 | 0 | 0 | 1
-EQ | 3 | 
-   counter_14k<4>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
-	counter_14k<3>;	// (1 pt, 4 inp)
-   counter_14k<4>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
-GLOBALS | 1 | 2 | clk_in
-
-MACROCELL | 1 | 14 | counter_14k<1>_MC
+MACROCELL | 1 | 13 | counter_14k<1>_MC
 ATTRIBUTES | 2151711488 | 0
 OUTPUTMC | 16 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
 INPUTS | 1 | counter_14k<0>
-INPUTMC | 1 | 1 | 15
+INPUTMC | 1 | 1 | 14
 EQ | 2 | 
    counter_14k<1>.T := counter_14k<0>;	// (1 pt, 1 inp)
    counter_14k<1>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
@@ -87,7 +85,7 @@ MACROCELL | 0 | 0 | counter_14k<2>_MC
 ATTRIBUTES | 2151711488 | 0
 OUTPUTMC | 15 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
 INPUTS | 2 | counter_14k<0>  | counter_14k<1>
-INPUTMC | 2 | 1 | 15 | 1 | 14
+INPUTMC | 2 | 1 | 14 | 1 | 13
 EQ | 2 | 
    counter_14k<2>.T := counter_14k<0> & counter_14k<1>;	// (1 pt, 2 inp)
    counter_14k<2>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
@@ -97,88 +95,112 @@ MACROCELL | 0 | 1 | counter_14k<3>_MC
 ATTRIBUTES | 2151711488 | 0
 OUTPUTMC | 14 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
 INPUTS | 3 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>
-INPUTMC | 3 | 1 | 15 | 1 | 14 | 0 | 0
+INPUTMC | 3 | 1 | 14 | 1 | 13 | 0 | 0
 EQ | 2 | 
    counter_14k<3>.T := counter_14k<0> & counter_14k<1> & counter_14k<2>;	// (1 pt, 3 inp)
    counter_14k<3>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
+MACROCELL | 0 | 2 | counter_14k<4>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
+INPUTS | 4 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>
+INPUTMC | 4 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1
+EQ | 3 | 
+   counter_14k<4>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3>;	// (1 pt, 4 inp)
+   counter_14k<4>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_in
+
 MACROCELL | 0 | 6 | counter_14k<5>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 14 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 11
-INPUTS | 10 | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
-INPUTMC | 10 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
+OUTPUTMC | 13 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
+INPUTS | 10 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
+INPUTMC | 10 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
 EQ | 11 | 
-   counter_14k<5>.T := counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<5>
-	# counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<6>
-	# counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<7>
-	# counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<8>
-	# counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & !counter_14k<9>;	// (5 pt, 10 inp)
+   counter_14k<5>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<5>
+	# counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<6>
+	# counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<7>
+	# counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<8>
+	# counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & !counter_14k<9>;	// (5 pt, 10 inp)
    counter_14k<5>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 3 | counter_14k<6>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 13 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 11
-INPUTS | 6 | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>
-INPUTMC | 6 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6
+OUTPUTMC | 12 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
+INPUTS | 6 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>
+INPUTMC | 6 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6
 EQ | 3 | 
-   counter_14k<6>.T := counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<5>;	// (1 pt, 6 inp)
+   counter_14k<6>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<5>;	// (1 pt, 6 inp)
    counter_14k<6>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 4 | counter_14k<7>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 12 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 11
-INPUTS | 7 | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>
-INPUTMC | 7 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3
+OUTPUTMC | 11 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
+INPUTS | 7 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>
+INPUTMC | 7 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3
 EQ | 3 | 
-   counter_14k<7>.T := counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<5> & counter_14k<6>;	// (1 pt, 7 inp)
+   counter_14k<7>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<5> & counter_14k<6>;	// (1 pt, 7 inp)
    counter_14k<7>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 5 | counter_14k<8>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 11 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 11
-INPUTS | 8 | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>
-INPUTMC | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4
+OUTPUTMC | 10 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
+INPUTS | 8 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>
+INPUTMC | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4
 EQ | 4 | 
-   counter_14k<8>.T := counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<5> & counter_14k<6> & 
+   counter_14k<8>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<5> & counter_14k<6> & 
 	counter_14k<7>;	// (1 pt, 8 inp)
    counter_14k<8>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 7 | counter_14k<9>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 11 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 11
-INPUTS | 10 | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
-INPUTMC | 10 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
+OUTPUTMC | 10 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15
+INPUTS | 10 | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
+INPUTMC | 10 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
 EQ | 7 | 
-   counter_14k<9>.T := counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & counter_14k<5> & counter_14k<6> & 
+   counter_14k<9>.T := counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & counter_14k<5> & counter_14k<6> & 
 	counter_14k<7> & counter_14k<8>
-	# counter_14k<0> & counter_14k<4> & counter_14k<1> & 
-	counter_14k<2> & counter_14k<3> & !counter_14k<5> & !counter_14k<6> & 
+	# counter_14k<0> & counter_14k<1> & counter_14k<2> & 
+	counter_14k<3> & counter_14k<4> & !counter_14k<5> & !counter_14k<6> & 
 	!counter_14k<7> & !counter_14k<8> & counter_14k<9>;	// (2 pt, 10 inp)
    counter_14k<9>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
+MACROCELL | 0 | 11 | cycle_counter<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 5 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 12
+INPUTS | 13 | cycle_counter<0>  | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>  | cycle_counter<2>
+INPUTMC | 13 | 0 | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9 | 0 | 10
+EQ | 5 | 
+   cycle_counter<3>.T := cycle_counter<0> & counter_14k<0> & 
+	counter_14k<1> & counter_14k<2> & counter_14k<3> & counter_14k<4> & 
+	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
+	counter_14k<9> & cycle_counter<1> & cycle_counter<2>;	// (1 pt, 13 inp)
+   cycle_counter<3>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_in
+
 MACROCELL | 0 | 9 | cycle_counter<1>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 7 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 10
-INPUTS | 11 | cycle_counter<0>  | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
-INPUTMC | 11 | 0 | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
+OUTPUTMC | 7 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 12
+INPUTS | 11 | cycle_counter<0>  | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>
+INPUTMC | 11 | 0 | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7
 EQ | 5 | 
    cycle_counter<1>.T := cycle_counter<0> & counter_14k<0> & 
-	counter_14k<4> & counter_14k<1> & counter_14k<2> & counter_14k<3> & 
+	counter_14k<1> & counter_14k<2> & counter_14k<3> & counter_14k<4> & 
 	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
 	counter_14k<9>;	// (1 pt, 11 inp)
    cycle_counter<1>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
@@ -186,84 +208,58 @@ GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 10 | cycle_counter<2>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 6 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 10
-INPUTS | 12 | cycle_counter<0>  | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>
-INPUTMC | 12 | 0 | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9
+OUTPUTMC | 6 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 12
+INPUTS | 12 | cycle_counter<0>  | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>
+INPUTMC | 12 | 0 | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9
 EQ | 5 | 
    cycle_counter<2>.T := cycle_counter<0> & counter_14k<0> & 
-	counter_14k<4> & counter_14k<1> & counter_14k<2> & counter_14k<3> & 
+	counter_14k<1> & counter_14k<2> & counter_14k<3> & counter_14k<4> & 
 	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
 	counter_14k<9> & cycle_counter<1>;	// (1 pt, 12 inp)
    cycle_counter<2>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
-MACROCELL | 0 | 11 | cycle_counter<3>_MC
-ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 5 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 10
-INPUTS | 13 | cycle_counter<0>  | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>  | cycle_counter<2>
-INPUTMC | 13 | 0 | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9 | 0 | 10
-EQ | 5 | 
-   cycle_counter<3>.T := cycle_counter<0> & counter_14k<0> & 
-	counter_14k<4> & counter_14k<1> & counter_14k<2> & counter_14k<3> & 
-	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
-	counter_14k<9> & cycle_counter<1> & cycle_counter<2>;	// (1 pt, 13 inp)
-   cycle_counter<3>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
-GLOBALS | 1 | 2 | clk_in
-
 MACROCELL | 0 | 12 | cycle_counter<4>_MC
 ATTRIBUTES | 2151711488 | 0
-OUTPUTMC | 3 | 0 | 13 | 0 | 14 | 0 | 15
-INPUTS | 14 | cycle_counter<0>  | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>  | cycle_counter<2>  | cycle_counter<3>
-INPUTMC | 14 | 0 | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9 | 0 | 10 | 0 | 11
+OUTPUTMC | 4 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 12
+INPUTS | 14 | cycle_counter<0>  | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<3>  | cycle_counter<1>  | cycle_counter<2>
+INPUTMC | 14 | 0 | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 11 | 0 | 9 | 0 | 10
 EQ | 6 | 
    cycle_counter<4>.T := cycle_counter<0> & counter_14k<0> & 
-	counter_14k<4> & counter_14k<1> & counter_14k<2> & counter_14k<3> & 
+	counter_14k<1> & counter_14k<2> & counter_14k<3> & counter_14k<4> & 
 	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
-	counter_14k<9> & cycle_counter<1> & cycle_counter<2> & 
-	cycle_counter<3>;	// (1 pt, 14 inp)
+	counter_14k<9> & cycle_counter<3> & cycle_counter<1> & 
+	cycle_counter<2>;	// (1 pt, 14 inp)
    cycle_counter<4>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 13 | cycle_counter<5>_MC
 ATTRIBUTES | 2151711488 | 0
 OUTPUTMC | 2 | 0 | 14 | 0 | 15
-INPUTS | 15 | cycle_counter<0>  | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>  | cycle_counter<2>  | cycle_counter<3>  | cycle_counter<4>
-INPUTMC | 15 | 0 | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12
+INPUTS | 15 | cycle_counter<0>  | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<3>  | cycle_counter<1>  | cycle_counter<2>  | cycle_counter<4>
+INPUTMC | 15 | 0 | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 11 | 0 | 9 | 0 | 10 | 0 | 12
 EQ | 6 | 
    cycle_counter<5>.T := cycle_counter<0> & counter_14k<0> & 
-	counter_14k<4> & counter_14k<1> & counter_14k<2> & counter_14k<3> & 
+	counter_14k<1> & counter_14k<2> & counter_14k<3> & counter_14k<4> & 
 	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
-	counter_14k<9> & cycle_counter<1> & cycle_counter<2> & 
-	cycle_counter<3> & cycle_counter<4>;	// (1 pt, 15 inp)
+	counter_14k<9> & cycle_counter<3> & cycle_counter<1> & 
+	cycle_counter<2> & cycle_counter<4>;	// (1 pt, 15 inp)
    cycle_counter<5>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
 MACROCELL | 0 | 14 | cycle_counter<6>_MC
 ATTRIBUTES | 2151711488 | 0
 OUTPUTMC | 1 | 0 | 15
-INPUTS | 16 | cycle_counter<0>  | counter_14k<0>  | counter_14k<4>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<1>  | cycle_counter<2>  | cycle_counter<3>  | cycle_counter<4>  | cycle_counter<5>
-INPUTMC | 16 | 0 | 8 | 1 | 15 | 0 | 2 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13
+INPUTS | 16 | cycle_counter<0>  | counter_14k<0>  | counter_14k<1>  | counter_14k<2>  | counter_14k<3>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>  | counter_14k<8>  | counter_14k<9>  | cycle_counter<3>  | cycle_counter<1>  | cycle_counter<2>  | cycle_counter<4>  | cycle_counter<5>
+INPUTMC | 16 | 0 | 8 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 11 | 0 | 9 | 0 | 10 | 0 | 12 | 0 | 13
 EQ | 6 | 
    cycle_counter<6>.T := cycle_counter<0> & counter_14k<0> & 
-	counter_14k<4> & counter_14k<1> & counter_14k<2> & counter_14k<3> & 
+	counter_14k<1> & counter_14k<2> & counter_14k<3> & counter_14k<4> & 
 	!counter_14k<5> & !counter_14k<6> & !counter_14k<7> & !counter_14k<8> & 
-	counter_14k<9> & cycle_counter<1> & cycle_counter<2> & 
-	cycle_counter<3> & cycle_counter<4> & cycle_counter<5>;	// (1 pt, 16 inp)
+	counter_14k<9> & cycle_counter<3> & cycle_counter<1> & 
+	cycle_counter<2> & cycle_counter<4> & cycle_counter<5>;	// (1 pt, 16 inp)
    cycle_counter<6>.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
 GLOBALS | 1 | 2 | clk_in
 
-MACROCELL | 1 | 11 | clk_out_14k_MC
-ATTRIBUTES | 8684290 | 0
-INPUTS | 6 | counter_14k<8>  | counter_14k<9>  | counter_14k<4>  | counter_14k<5>  | counter_14k<6>  | counter_14k<7>
-INPUTMC | 6 | 0 | 5 | 0 | 7 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 4
-EQ | 4 | 
-   clk_out_14k := !counter_14k<8> & !counter_14k<9>
-	# !counter_14k<4> & !counter_14k<5> & !counter_14k<6> & 
-	!counter_14k<7> & !counter_14k<9>;	// (2 pt, 6 inp)
-   clk_out_14k.CLK  =  clk_in;	// GCK	(0 pt, 0 inp)
-GLOBALS | 1 | 2 | clk_in
-
-PIN | clk_in | 16384 | 16 | LVCMOS18 | 12 | 21 | 1 | 12 | 1 | 15 | 1 | 14 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 10 | 1 | 11
-PIN | bpsk_out | 536871040 | 0 | LVCMOS18 | 17
-PIN | clk_out_14k | 536871040 | 0 | LVCMOS18 | 19
-PIN | clk_out_3_84M | 536871040 | 0 | LVCMOS18 | 23
+PIN | clk_in | 16384 | 16 | LVCMOS18 | 12 | 20 | 1 | 15 | 1 | 14 | 1 | 13 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 12
+PIN | bpsk_out | 536871040 | 0 | LVCMOS18 | 23

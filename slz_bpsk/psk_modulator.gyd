@@ -2,9 +2,7 @@ Pin Freeze File:  version P.20131013
 
 2C32A44VQ XC2C32A-6-VQ44
 clk_in S:PIN1
-bpsk_out S:PIN6
-clk_out_14k S:PIN8
-clk_out_3_84M S:PIN12
+bpsk_out S:PIN12
 
 
 ;The remaining section of the .gyd file is for documentation purposes only.
@@ -15,6 +13,6 @@ PARTITION FB1_1 counter_14k<2> counter_14k<3> counter_14k<4> counter_14k<6>
 		 cycle_counter<0> cycle_counter<1> cycle_counter<2> cycle_counter<3>
 		 cycle_counter<4> cycle_counter<5> cycle_counter<6> cycle_counter<7>
 		
-PARTITION FB2_11 bpsk_out clk_out_14k clk_out_3_84M
-PARTITION FB2_15 counter_14k<1> counter_14k<0>
+PARTITION FB2_13 bpsk_out counter_14k<1> counter_14k<0> clk_out_3_84M
+		
 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="sub_cpld288.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="cpld288.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="cpld288.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cpld288.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="cpld288.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="cpld288.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="cpld288.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="cpld288.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cpld288.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="cpld288.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="cpld288.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cpld288.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="cpld288.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cpld288.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="cpld288.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="cpld288.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpld288.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpld288.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cpld288.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cpld288.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpld288.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpld288.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="cpld288.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpld288.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cpld288.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpld288_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpld288_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="cpld288_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpld288_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="cpld288_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpld288_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpld288_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="psk_modulator_parameterized.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="psk_modulator_parameterized.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="psk_modulator_parameterized.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="psk_modulator_parameterized.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="psk_modulator_parameterized.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="psk_modulator_parameterized.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="psk_modulator_parameterized.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="psk_modulator_parameterized.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="psk_modulator_parameterized.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="psk_modulator_parameterized_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="psk_modulator_parameterized_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1761554890" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1761554890">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1761558568" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6317167553202134217" xil_pn:start_ts="1761558568">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1761558613" xil_pn:in_ck="144151172270377" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-7567092228132954199" xil_pn:start_ts="1761558610">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="cpld288.lso"/>
+      <outfile xil_pn:name="cpld288.ngc"/>
+      <outfile xil_pn:name="cpld288.ngr"/>
+      <outfile xil_pn:name="cpld288.prj"/>
+      <outfile xil_pn:name="cpld288.stx"/>
+      <outfile xil_pn:name="cpld288.syr"/>
+      <outfile xil_pn:name="cpld288.xst"/>
+      <outfile xil_pn:name="cpld288_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1761558571" xil_pn:in_ck="156980626602442833" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981262315355847" xil_pn:start_ts="1761558571">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1761558616" xil_pn:in_ck="-7681740343462346510" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="1180904427112756825" xil_pn:start_ts="1761558613">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="cpld288.bld"/>
+      <outfile xil_pn:name="cpld288.ngd"/>
+      <outfile xil_pn:name="cpld288_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1761558623" xil_pn:in_ck="156980626602435340" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-2881701907825404296" xil_pn:start_ts="1761558616">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="cpld288.chk"/>
+      <outfile xil_pn:name="cpld288.cxt"/>
+      <outfile xil_pn:name="cpld288.gyd"/>
+      <outfile xil_pn:name="cpld288.log"/>
+      <outfile xil_pn:name="cpld288.mfd"/>
+      <outfile xil_pn:name="cpld288.nga"/>
+      <outfile xil_pn:name="cpld288.pad"/>
+      <outfile xil_pn:name="cpld288.pnx"/>
+      <outfile xil_pn:name="cpld288.rpt"/>
+      <outfile xil_pn:name="cpld288.tim"/>
+      <outfile xil_pn:name="cpld288.tspec"/>
+      <outfile xil_pn:name="cpld288.vm6"/>
+      <outfile xil_pn:name="cpld288.xml"/>
+      <outfile xil_pn:name="cpld288_build.xml"/>
+      <outfile xil_pn:name="cpld288_html"/>
+      <outfile xil_pn:name="cpld288_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1761558624" xil_pn:in_ck="156980626602444204" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1761558623">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="cpld288.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1761558627" xil_pn:in_ck="156980626602430918" xil_pn:name="TRAN_impactProgrammingTool_CPLD" xil_pn:prop_ck="7996569619189960536" xil_pn:start_ts="1761558627">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1761554908" xil_pn:in_ck="156980626602444204" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1761554906">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

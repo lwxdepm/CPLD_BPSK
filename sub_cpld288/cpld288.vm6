@@ -1,0 +1,1321 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C32A44VQ | XC2C32A-6-VQ44
+
+DEVICE | 2C32A | 2C32A44VQ | 
+
+NETWORK | cpld288 | 0 | 0 | 1073758214 | 0
+
+MACROCELL_INSTANCE | PrldLow | bpsk_out_MC | cpld288_COPY_0_COPY_0 | 1024 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_out_MC.UIM | 2482 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_out_MC.Q | carrier_out_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<7> | 2483 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<7>_MC.Q | cycle_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | bpsk_out_MC.Q | 2574 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | bpsk_out_MC.Q | bpsk_out_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | bpsk_out_MC.SI | bpsk_out_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_out_MC.UIM | 2482 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_out_MC.Q | carrier_out_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<7> | 2483 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<7>_MC.Q | cycle_counter<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | bpsk_out_MC.D1 | 2464 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | carrier_out_MC.UIM | IV_FALSE | cycle_counter<7>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | bpsk_out_MC.D2 | 2465 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_FALSE | cycle_counter<7> | IV_TRUE | cycle_counter<0> | IV_FALSE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+SPPTERM | 4 | IV_FALSE | cycle_counter<7> | IV_TRUE | cycle_counter<3> | IV_FALSE | cycle_counter<1> | IV_FALSE | cycle_counter<2>
+SPPTERM | 4 | IV_FALSE | cycle_counter<7> | IV_TRUE | cycle_counter<3> | IV_FALSE | cycle_counter<1> | IV_FALSE | cycle_counter<4>
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<0> | IV_TRUE | cycle_counter<3> | IV_FALSE | cycle_counter<2> | IV_FALSE | cycle_counter<4>
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<0> | IV_FALSE | cycle_counter<3> | IV_TRUE | cycle_counter<2> | IV_FALSE | cycle_counter<4>
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_FALSE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<3> | IV_FALSE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+SPPTERM | 6 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<0> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+
+SRFF_INSTANCE | bpsk_out_MC.REG | bpsk_out_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | bpsk_out_MC.D | 2463 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | bpsk_out_MC.Q | 2573 | ? | 0 | 0 | bpsk_out_MC | NULL | NULL | bpsk_out_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | carrier_out_MC | cpld288_COPY_0_COPY_0 | 5120 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_acc<6> | 2469 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<6>_MC.Q | carrier_acc<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_acc<7> | 2476 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<7>_MC.Q | carrier_acc<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | carrier_out_MC.Q | 2576 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_out_MC.Q | carrier_out_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | carrier_out_MC.UIM | 2482 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_out_MC.Q | carrier_out_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | carrier_out_MC.SI | carrier_out_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_acc<6> | 2469 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<6>_MC.Q | carrier_acc<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_acc<7> | 2476 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<7>_MC.Q | carrier_acc<7>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | carrier_out_MC.D1 | 2467 | ? | 0 | 0 | carrier_out_MC | NULL | NULL | carrier_out_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | carrier_acc<6> | IV_TRUE | carrier_acc<7>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | carrier_out_MC.D2 | 2468 | ? | 0 | 0 | carrier_out_MC | NULL | NULL | carrier_out_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | carrier_out_MC.REG | carrier_out_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | carrier_out_MC.D | 2466 | ? | 0 | 0 | carrier_out_MC | NULL | NULL | carrier_out_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | carrier_out_MC.Q | 2481 | ? | 0 | 0 | carrier_out_MC | NULL | NULL | carrier_out_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff | carrier_acc<6>_MC | cpld288_COPY_0_COPY_0 | 5376 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | carrier_acc<6> | 2469 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<6>_MC.Q | carrier_acc<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | carrier_acc<6>_MC.SI | carrier_acc<6>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | carrier_acc<6>_MC.D1 | 2473 | ? | 0 | 0 | carrier_acc<6>_MC | NULL | NULL | carrier_acc<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | carrier_acc<6>_MC.D2 | 2472 | ? | 0 | 0 | carrier_acc<6>_MC | NULL | NULL | carrier_acc<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | carrier_acc<6>_MC.REG | carrier_acc<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | carrier_acc<6>_MC.D | 2471 | ? | 0 | 0 | carrier_acc<6>_MC | NULL | NULL | carrier_acc<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | carrier_acc<6>_MC.Q | 2470 | ? | 0 | 0 | carrier_acc<6>_MC | NULL | NULL | carrier_acc<6>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_in_II | cpld288_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk_in | 2474 | PI | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+
+MACROCELL_INSTANCE | PrldLow+Tff | carrier_acc<7>_MC | cpld288_COPY_0_COPY_0 | 5120 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_acc<6> | 2469 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<6>_MC.Q | carrier_acc<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | carrier_acc<7> | 2476 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<7>_MC.Q | carrier_acc<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | carrier_acc<7>_MC.SI | carrier_acc<7>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | carrier_acc<6> | 2469 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_acc<6>_MC.Q | carrier_acc<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | carrier_acc<7>_MC.D1 | 2479 | ? | 0 | 0 | carrier_acc<7>_MC | NULL | NULL | carrier_acc<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | carrier_acc<6>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | carrier_acc<7>_MC.D2 | 2480 | ? | 0 | 0 | carrier_acc<7>_MC | NULL | NULL | carrier_acc<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | carrier_acc<7>_MC.REG | carrier_acc<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | carrier_acc<7>_MC.D | 2478 | ? | 0 | 0 | carrier_acc<7>_MC | NULL | NULL | carrier_acc<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | carrier_acc<7>_MC.Q | 2477 | ? | 0 | 0 | carrier_acc<7>_MC | NULL | NULL | carrier_acc<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<7>_MC | cpld288_COPY_0_COPY_0 | 5120 | 18 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<5> | 2563 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<5>_MC.Q | cycle_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<6> | 2568 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<6>_MC.Q | cycle_counter<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<7> | 2483 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<7>_MC.Q | cycle_counter<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<7>_MC.SI | cycle_counter<7>_MC | 0 | 17 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<5> | 2563 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<5>_MC.Q | cycle_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<6> | 2568 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<6>_MC.Q | cycle_counter<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<7>_MC.D1 | 2486 | ? | 0 | 0 | cycle_counter<7>_MC | NULL | NULL | cycle_counter<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 17 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4> | IV_TRUE | cycle_counter<5> | IV_TRUE | cycle_counter<6>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<7>_MC.D2 | 2487 | ? | 0 | 0 | cycle_counter<7>_MC | NULL | NULL | cycle_counter<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<7>_MC.REG | cycle_counter<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<7>_MC.D | 2485 | ? | 0 | 0 | cycle_counter<7>_MC | NULL | NULL | cycle_counter<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<7>_MC.Q | 2484 | ? | 0 | 0 | cycle_counter<7>_MC | NULL | NULL | cycle_counter<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<0>_MC | cpld288_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<0>_MC.SI | cycle_counter<0>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<0>_MC.D1 | 2491 | ? | 0 | 0 | cycle_counter<0>_MC | NULL | NULL | cycle_counter<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 10 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<0>_MC.D2 | 2492 | ? | 0 | 0 | cycle_counter<0>_MC | NULL | NULL | cycle_counter<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<0>_MC.REG | cycle_counter<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<0>_MC.D | 2490 | ? | 0 | 0 | cycle_counter<0>_MC | NULL | NULL | cycle_counter<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<0>_MC.Q | 2489 | ? | 0 | 0 | cycle_counter<0>_MC | NULL | NULL | cycle_counter<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff | counter_14k<0>_MC | cpld288_COPY_0_COPY_0 | 5376 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<0>_MC.SI | counter_14k<0>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<0>_MC.D1 | 2497 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<0>_MC.D2 | 2496 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<0>_MC.REG | counter_14k<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<0>_MC.D | 2495 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<0>_MC.Q | 2494 | ? | 0 | 0 | counter_14k<0>_MC | NULL | NULL | counter_14k<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<1>_MC | cpld288_COPY_0_COPY_0 | 5120 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<1>_MC.SI | counter_14k<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<1>_MC.D1 | 2501 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | counter_14k<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<1>_MC.D2 | 2502 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<1>_MC.REG | counter_14k<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<1>_MC.D | 2500 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<1>_MC.Q | 2499 | ? | 0 | 0 | counter_14k<1>_MC | NULL | NULL | counter_14k<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<2>_MC | cpld288_COPY_0_COPY_0 | 5120 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<2>_MC.SI | counter_14k<2>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<2>_MC.D1 | 2506 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<2>_MC.D2 | 2507 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<2>_MC.REG | counter_14k<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<2>_MC.D | 2505 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<2>_MC.Q | 2504 | ? | 0 | 0 | counter_14k<2>_MC | NULL | NULL | counter_14k<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<3>_MC | cpld288_COPY_0_COPY_0 | 5120 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<3>_MC.SI | counter_14k<3>_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<3>_MC.D1 | 2511 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 3 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<3>_MC.D2 | 2512 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<3>_MC.REG | counter_14k<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<3>_MC.D | 2510 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<3>_MC.Q | 2509 | ? | 0 | 0 | counter_14k<3>_MC | NULL | NULL | counter_14k<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<4>_MC | cpld288_COPY_0_COPY_0 | 5120 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<4>_MC.SI | counter_14k<4>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<4>_MC.D1 | 2516 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 4 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<4>_MC.D2 | 2517 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<4>_MC.REG | counter_14k<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<4>_MC.D | 2515 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<4>_MC.Q | 2514 | ? | 0 | 0 | counter_14k<4>_MC | NULL | NULL | counter_14k<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<5>_MC | cpld288_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<5>_MC.SI | counter_14k<5>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<5>_MC.D1 | 2522 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<5>_MC.D2 | 2521 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5>
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<6>
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<7>
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<8>
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<9>
+
+SRFF_INSTANCE | counter_14k<5>_MC.REG | counter_14k<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<5>_MC.D | 2520 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<5>_MC.Q | 2519 | ? | 0 | 0 | counter_14k<5>_MC | NULL | NULL | counter_14k<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<6>_MC | cpld288_COPY_0_COPY_0 | 5120 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<6>_MC.SI | counter_14k<6>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<6>_MC.D1 | 2526 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<6>_MC.D2 | 2527 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<6>_MC.REG | counter_14k<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<6>_MC.D | 2525 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<6>_MC.Q | 2524 | ? | 0 | 0 | counter_14k<6>_MC | NULL | NULL | counter_14k<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<7>_MC | cpld288_COPY_0_COPY_0 | 5120 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<7>_MC.SI | counter_14k<7>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<7>_MC.D1 | 2531 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 7 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<7>_MC.D2 | 2532 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<7>_MC.REG | counter_14k<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<7>_MC.D | 2530 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<7>_MC.Q | 2529 | ? | 0 | 0 | counter_14k<7>_MC | NULL | NULL | counter_14k<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<8>_MC | cpld288_COPY_0_COPY_0 | 5120 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<8>_MC.SI | counter_14k<8>_MC | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<8>_MC.D1 | 2536 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 8 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<8>_MC.D2 | 2537 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | counter_14k<8>_MC.REG | counter_14k<8>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<8>_MC.D | 2535 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<8>_MC.Q | 2534 | ? | 0 | 0 | counter_14k<8>_MC | NULL | NULL | counter_14k<8>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | counter_14k<9>_MC | cpld288_COPY_0_COPY_0 | 5120 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | counter_14k<9>_MC.SI | counter_14k<9>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter_14k<9>_MC.D1 | 2542 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter_14k<9>_MC.D2 | 2541 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 9 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7> | IV_TRUE | counter_14k<8>
+SPPTERM | 10 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9>
+
+SRFF_INSTANCE | counter_14k<9>_MC.REG | counter_14k<9>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter_14k<9>_MC.D | 2540 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter_14k<9>_MC.Q | 2539 | ? | 0 | 0 | counter_14k<9>_MC | NULL | NULL | counter_14k<9>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<3>_MC | cpld288_COPY_0_COPY_0 | 5120 | 14 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<3>_MC.SI | cycle_counter<3>_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<3>_MC.D1 | 2546 | ? | 0 | 0 | cycle_counter<3>_MC | NULL | NULL | cycle_counter<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 13 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<3>_MC.D2 | 2547 | ? | 0 | 0 | cycle_counter<3>_MC | NULL | NULL | cycle_counter<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<3>_MC.REG | cycle_counter<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<3>_MC.D | 2545 | ? | 0 | 0 | cycle_counter<3>_MC | NULL | NULL | cycle_counter<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<3>_MC.Q | 2544 | ? | 0 | 0 | cycle_counter<3>_MC | NULL | NULL | cycle_counter<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<1>_MC | cpld288_COPY_0_COPY_0 | 5120 | 12 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<1>_MC.SI | cycle_counter<1>_MC | 0 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<1>_MC.D1 | 2551 | ? | 0 | 0 | cycle_counter<1>_MC | NULL | NULL | cycle_counter<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 11 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<1>_MC.D2 | 2552 | ? | 0 | 0 | cycle_counter<1>_MC | NULL | NULL | cycle_counter<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<1>_MC.REG | cycle_counter<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<1>_MC.D | 2550 | ? | 0 | 0 | cycle_counter<1>_MC | NULL | NULL | cycle_counter<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<1>_MC.Q | 2549 | ? | 0 | 0 | cycle_counter<1>_MC | NULL | NULL | cycle_counter<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<2>_MC | cpld288_COPY_0_COPY_0 | 5120 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<2>_MC.SI | cycle_counter<2>_MC | 0 | 12 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<2>_MC.D1 | 2556 | ? | 0 | 0 | cycle_counter<2>_MC | NULL | NULL | cycle_counter<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 12 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<1>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<2>_MC.D2 | 2557 | ? | 0 | 0 | cycle_counter<2>_MC | NULL | NULL | cycle_counter<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<2>_MC.REG | cycle_counter<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<2>_MC.D | 2555 | ? | 0 | 0 | cycle_counter<2>_MC | NULL | NULL | cycle_counter<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<2>_MC.Q | 2554 | ? | 0 | 0 | cycle_counter<2>_MC | NULL | NULL | cycle_counter<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<4>_MC | cpld288_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<4>_MC.SI | cycle_counter<4>_MC | 0 | 14 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<4>_MC.D1 | 2561 | ? | 0 | 0 | cycle_counter<4>_MC | NULL | NULL | cycle_counter<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 14 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<4>_MC.D2 | 2562 | ? | 0 | 0 | cycle_counter<4>_MC | NULL | NULL | cycle_counter<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<4>_MC.REG | cycle_counter<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<4>_MC.D | 2560 | ? | 0 | 0 | cycle_counter<4>_MC | NULL | NULL | cycle_counter<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<4>_MC.Q | 2559 | ? | 0 | 0 | cycle_counter<4>_MC | NULL | NULL | cycle_counter<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<5>_MC | cpld288_COPY_0_COPY_0 | 5120 | 16 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<5> | 2563 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<5>_MC.Q | cycle_counter<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<5>_MC.SI | cycle_counter<5>_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<5>_MC.D1 | 2566 | ? | 0 | 0 | cycle_counter<5>_MC | NULL | NULL | cycle_counter<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 15 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<5>_MC.D2 | 2567 | ? | 0 | 0 | cycle_counter<5>_MC | NULL | NULL | cycle_counter<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<5>_MC.REG | cycle_counter<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<5>_MC.D | 2565 | ? | 0 | 0 | cycle_counter<5>_MC | NULL | NULL | cycle_counter<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<5>_MC.Q | 2564 | ? | 0 | 0 | cycle_counter<5>_MC | NULL | NULL | cycle_counter<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | cycle_counter<6>_MC | cpld288_COPY_0_COPY_0 | 5120 | 17 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<5> | 2563 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<5>_MC.Q | cycle_counter<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cycle_counter<6> | 2568 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<6>_MC.Q | cycle_counter<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cycle_counter<6>_MC.SI | cycle_counter<6>_MC | 0 | 16 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<0> | 2488 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<0>_MC.Q | cycle_counter<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<0> | 2493 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<0>_MC.Q | counter_14k<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<1> | 2498 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<1>_MC.Q | counter_14k<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<2> | 2503 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<2>_MC.Q | counter_14k<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<3> | 2508 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<3>_MC.Q | counter_14k<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<4> | 2513 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<4>_MC.Q | counter_14k<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<5> | 2518 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<5>_MC.Q | counter_14k<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<6> | 2523 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<6>_MC.Q | counter_14k<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<7> | 2528 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<7>_MC.Q | counter_14k<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<8> | 2533 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<8>_MC.Q | counter_14k<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter_14k<9> | 2538 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | counter_14k<9>_MC.Q | counter_14k<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<3> | 2543 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<3>_MC.Q | cycle_counter<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<1> | 2548 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<1>_MC.Q | cycle_counter<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<2> | 2553 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<2>_MC.Q | cycle_counter<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<4> | 2558 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<4>_MC.Q | cycle_counter<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cycle_counter<5> | 2563 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | cycle_counter<5>_MC.Q | cycle_counter<5>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cycle_counter<6>_MC.D1 | 2571 | ? | 0 | 0 | cycle_counter<6>_MC | NULL | NULL | cycle_counter<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 16 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4> | IV_TRUE | cycle_counter<5>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cycle_counter<6>_MC.D2 | 2572 | ? | 0 | 0 | cycle_counter<6>_MC | NULL | NULL | cycle_counter<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | cycle_counter<6>_MC.REG | cycle_counter<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cycle_counter<6>_MC.D | 2570 | ? | 0 | 0 | cycle_counter<6>_MC | NULL | NULL | cycle_counter<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_in_II/FCLK | 2475 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | clk_in_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cycle_counter<6>_MC.Q | 2569 | ? | 0 | 0 | cycle_counter<6>_MC | NULL | NULL | cycle_counter<6>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | bpsk_out | cpld288_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | bpsk_out_MC.Q | 2574 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | bpsk_out_MC.Q | bpsk_out_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | bpsk_out | 2575 | PO | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | bpsk_out | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | carrier_out | cpld288_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | carrier_out_MC.Q | 2576 | ? | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | carrier_out_MC.Q | carrier_out_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | carrier_out | 2577 | PO | 0 | 0 | cpld288_COPY_0_COPY_0 | NULL | NULL | carrier_out | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | cpld288_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | counter_14k<2>_MC | 1 | NULL | 0 | NULL | 0 | 38 | 49152
+FBPIN | 2 | counter_14k<3>_MC | 1 | NULL | 0 | NULL | 0 | 37 | 49152
+FBPIN | 3 | counter_14k<4>_MC | 1 | NULL | 0 | NULL | 0 | 36 | 49152
+FBPIN | 4 | counter_14k<6>_MC | 1 | NULL | 0 | NULL | 0 | 34 | 53248
+FBPIN | 5 | counter_14k<7>_MC | 1 | NULL | 0 | NULL | 0 | 33 | 53248
+FBPIN | 6 | counter_14k<8>_MC | 1 | NULL | 0 | NULL | 0 | 32 | 53248
+FBPIN | 7 | counter_14k<5>_MC | 1 | NULL | 0 | NULL | 0 | 31 | 53248
+FBPIN | 8 | counter_14k<9>_MC | 1 | NULL | 0 | NULL | 0 | 30 | 51200
+FBPIN | 9 | cycle_counter<0>_MC | 1 | NULL | 0 | NULL | 0 | 29 | 49152
+FBPIN | 10 | cycle_counter<1>_MC | 1 | NULL | 0 | NULL | 0 | 28 | 49152
+FBPIN | 11 | cycle_counter<2>_MC | 1 | NULL | 0 | NULL | 0 | 27 | 49152
+FBPIN | 12 | cycle_counter<3>_MC | 1 | NULL | 0 | NULL | 0 | 23 | 49152
+FBPIN | 13 | cycle_counter<4>_MC | 1 | NULL | 0 | NULL | 0 | 22 | 49152
+FBPIN | 14 | cycle_counter<5>_MC | 1 | NULL | 0 | NULL | 0 | 21 | 49152
+FBPIN | 15 | cycle_counter<6>_MC | 1 | NULL | 0 | NULL | 0 | 20 | 49152
+FBPIN | 16 | cycle_counter<7>_MC | 1 | NULL | 0 | NULL | 0 | 19 | 49152
+
+FB_INSTANCE | FOOBAR2_ | cpld288_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 7 | NULL | 0 | clk_in_II | 1 | NULL | 0 | 1 | 57344
+FBPIN | 11 | counter_14k<1>_MC | 1 | NULL | 0 | NULL | 0 | 6 | 49152
+FBPIN | 12 | carrier_out_MC | 1 | NULL | 0 | carrier_out | 1 | 8 | 49152
+FBPIN | 13 | bpsk_out_MC | 1 | NULL | 0 | bpsk_out | 1 | 12 | 49152
+FBPIN | 14 | counter_14k<0>_MC | 1 | NULL | 0 | NULL | 0 | 13 | 49152
+FBPIN | 15 | carrier_acc<6>_MC | 1 | NULL | 0 | NULL | 0 | 14 | 49152
+FBPIN | 16 | carrier_acc<7>_MC | 1 | NULL | 0 | NULL | 0 | 16 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | cpld288_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | cpld288_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | cpld288_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 19
+PLA_TERM | 0 | 
+SPPTERM | 9 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7> | IV_TRUE | counter_14k<8>
+PLA_TERM | 1 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<6>
+PLA_TERM | 2 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<7>
+PLA_TERM | 3 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<8>
+PLA_TERM | 4 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<9>
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1>
+PLA_TERM | 13 | 
+SPPTERM | 3 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2>
+PLA_TERM | 16 | 
+SPPTERM | 4 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3>
+PLA_TERM | 19 | 
+SPPTERM | 6 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5>
+PLA_TERM | 22 | 
+SPPTERM | 7 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6>
+PLA_TERM | 25 | 
+SPPTERM | 8 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_TRUE | counter_14k<5> | IV_TRUE | counter_14k<6> | IV_TRUE | counter_14k<7>
+PLA_TERM | 34 | 
+SPPTERM | 10 | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9>
+PLA_TERM | 37 | 
+SPPTERM | 11 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9>
+PLA_TERM | 40 | 
+SPPTERM | 12 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<1>
+PLA_TERM | 43 | 
+SPPTERM | 13 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2>
+PLA_TERM | 46 | 
+SPPTERM | 14 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2>
+PLA_TERM | 49 | 
+SPPTERM | 15 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+PLA_TERM | 52 | 
+SPPTERM | 16 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4> | IV_TRUE | cycle_counter<5>
+PLA_TERM | 55 | 
+SPPTERM | 17 | IV_TRUE | cycle_counter<0> | IV_TRUE | counter_14k<0> | IV_TRUE | counter_14k<1> | IV_TRUE | counter_14k<2> | IV_TRUE | counter_14k<3> | IV_TRUE | counter_14k<4> | IV_FALSE | counter_14k<5> | IV_FALSE | counter_14k<6> | IV_FALSE | counter_14k<7> | IV_FALSE | counter_14k<8> | IV_TRUE | counter_14k<9> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4> | IV_TRUE | cycle_counter<5> | IV_TRUE | cycle_counter<6>
+
+PLA | FOOBAR2_ | 12
+PLA_TERM | 0 | 
+SPPTERM | 4 | IV_FALSE | cycle_counter<7> | IV_TRUE | cycle_counter<3> | IV_FALSE | cycle_counter<1> | IV_FALSE | cycle_counter<4>
+PLA_TERM | 1 | 
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<0> | IV_FALSE | cycle_counter<3> | IV_TRUE | cycle_counter<2> | IV_FALSE | cycle_counter<4>
+PLA_TERM | 2 | 
+SPPTERM | 6 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<0> | IV_TRUE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+PLA_TERM | 3 | 
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<3> | IV_FALSE | cycle_counter<1> | IV_TRUE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+PLA_TERM | 4 | 
+SPPTERM | 4 | IV_FALSE | cycle_counter<7> | IV_TRUE | cycle_counter<0> | IV_FALSE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+PLA_TERM | 5 | 
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<0> | IV_TRUE | cycle_counter<3> | IV_FALSE | cycle_counter<2> | IV_FALSE | cycle_counter<4>
+PLA_TERM | 6 | 
+SPPTERM | 5 | IV_FALSE | cycle_counter<7> | IV_FALSE | cycle_counter<3> | IV_TRUE | cycle_counter<1> | IV_FALSE | cycle_counter<2> | IV_TRUE | cycle_counter<4>
+PLA_TERM | 7 | 
+SPPTERM | 4 | IV_FALSE | cycle_counter<7> | IV_TRUE | cycle_counter<3> | IV_FALSE | cycle_counter<1> | IV_FALSE | cycle_counter<2>
+PLA_TERM | 40 | 
+SPPTERM | 1 | IV_TRUE | counter_14k<0>
+PLA_TERM | 43 | 
+SPPTERM | 2 | IV_TRUE | carrier_acc<6> | IV_TRUE | carrier_acc<7>
+PLA_TERM | 46 | 
+SPPTERM | 2 | IV_TRUE | carrier_out_MC.UIM | IV_FALSE | cycle_counter<7>
+PLA_TERM | 55 | 
+SPPTERM | 1 | IV_TRUE | carrier_acc<6>
+
+
+IOSTD | LVCMOS18
+clk_in | LVCMOS18
+bpsk_out | LVCMOS18
+carrier_out | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | cycle_counter<5> | NULL | 1 | cycle_counter<0> | NULL | 2 | counter_14k<4> | NULL | 3 | cycle_counter<6> | NULL | 4 | counter_14k<1> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | counter_14k<9> | NULL | 6 | counter_14k<0> | NULL | 7 | cycle_counter<4> | NULL | 8 | cycle_counter<2> | NULL | 9 | counter_14k<7> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | counter_14k<6> | NULL | 13 | cycle_counter<1> | NULL | 14 | cycle_counter<3> | NULL | 15 | counter_14k<2> | NULL | 16 | counter_14k<5> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 18 | counter_14k<3> | NULL | 21 | counter_14k<8> | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 46 | 41 | 35 | 47 | 59 | 40 | 62 | 45 | 43 | 37 | 36 | -1 | -1 | 42 | 44 | 33 | 39 | -1 | 34 | -1 | -1 | 38 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 1 | cycle_counter<7> | NULL | 2 | carrier_out_MC.UIM | NULL | 3 | cycle_counter<1> | NULL | 4 | cycle_counter<3> | NULL | 6 | counter_14k<0> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 7 | carrier_acc<7> | NULL | 8 | cycle_counter<2> | NULL | 10 | carrier_acc<6> | NULL | 16 | cycle_counter<4> | NULL | 17 | cycle_counter<0> | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | 48 | 60 | 42 | 44 | -1 | 62 | 64 | 43 | -1 | 63 | -1 | -1 | -1 | -1 | -1 | 45 | 41 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk_in | 2 | 2
